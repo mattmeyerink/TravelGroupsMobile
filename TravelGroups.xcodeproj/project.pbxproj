@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06B8B92326994F5A00731903 /* TravelGroups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B8B92226994F5A00731903 /* TravelGroups.storyboard */; };
 		06D098D0269146DF006A3559 /* TravelGroupsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D098CF269146DF006A3559 /* TravelGroupsApp.swift */; };
 		06D098D2269146DF006A3559 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D098D1269146DF006A3559 /* ContentView.swift */; };
 		06D098D4269146E2006A3559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D098D3269146E2006A3559 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06B8B92226994F5A00731903 /* TravelGroups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TravelGroups.storyboard; sourceTree = "<group>"; };
 		06D098CC269146DF006A3559 /* TravelGroups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGroups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D098CF269146DF006A3559 /* TravelGroupsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelGroupsApp.swift; sourceTree = "<group>"; };
 		06D098D1269146DF006A3559 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06B8B91E26994C7000731903 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06B8B91F26994C8200731903 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		06B8B92026994CA100731903 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		06B8B92126994CB500731903 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		06D098C3269146DF006A3559 = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +125,16 @@
 		06D098CE269146DF006A3559 /* TravelGroups */ = {
 			isa = PBXGroup;
 			children = (
+				06B8B92126994CB500731903 /* Utils */,
+				06B8B92026994CA100731903 /* Models */,
+				06B8B91F26994C8200731903 /* Controllers */,
+				06B8B91E26994C7000731903 /* Views */,
 				06D098CF269146DF006A3559 /* TravelGroupsApp.swift */,
 				06D098D1269146DF006A3559 /* ContentView.swift */,
 				06D098D3269146E2006A3559 /* Assets.xcassets */,
 				06D098D8269146E2006A3559 /* Info.plist */,
 				06D098D5269146E2006A3559 /* Preview Content */,
+				06B8B92226994F5A00731903 /* TravelGroups.storyboard */,
 			);
 			path = TravelGroups;
 			sourceTree = "<group>";
@@ -235,6 +270,7 @@
 			files = (
 				06D098D7269146E2006A3559 /* Preview Assets.xcassets in Resources */,
 				06D098D4269146E2006A3559 /* Assets.xcassets in Resources */,
+				06B8B92326994F5A00731903 /* TravelGroups.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
