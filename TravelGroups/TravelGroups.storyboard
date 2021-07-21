@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ylh-Fx-qJ3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="-874" y="-1067"/>
         </scene>
-        <!--Item-->
+        <!--Trips-->
         <scene sceneID="Edv-Ou-E4E">
             <objects>
-                <navigationController id="1oF-Yv-8YG" sceneMemberID="viewController">
+                <navigationController title="Trips" id="1oF-Yv-8YG" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="xHQ-Ng-p9b"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ebD-cg-c1u">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -52,6 +52,19 @@
                     <view key="view" contentMode="scaleToFill" id="Dad-A2-0gW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trips Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avk-4f-2FE">
+                                <rect key="frame" x="153" y="136" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SfS-do-0uJ">
+                                <rect key="frame" x="136" y="399" width="309" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="N8M-rV-mZB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -59,12 +72,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tpO-QV-iTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2030" y="673"/>
+            <point key="canvasLocation" x="-2030.4347826086957" y="672.99107142857144"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="Ac0-h5-dXm">
             <objects>
-                <navigationController id="CoC-p3-wEQ" sceneMemberID="viewController">
+                <navigationController title="Map" id="CoC-p3-wEQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="IoN-e1-55f"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yNw-wa-ViA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -78,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="-1255" y="-254"/>
         </scene>
-        <!--Item-->
+        <!--Explore-->
         <scene sceneID="EO9-Ln-jdp">
             <objects>
-                <navigationController id="yze-lH-L8J" sceneMemberID="viewController">
+                <navigationController title="Explore" id="yze-lH-L8J" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="eVn-8s-Xxt"/>
                     <navigationItem key="navigationItem" id="1jf-8o-rOm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FQd-fr-bDd">
@@ -96,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="-475" y="-254"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="0Ef-Ie-FzV">
             <objects>
-                <navigationController id="r5Z-7b-ps4" sceneMemberID="viewController">
+                <navigationController title="Profile" id="r5Z-7b-ps4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="KYL-lz-78u"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OBW-Ll-6nR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -120,6 +133,15 @@
                     <view key="view" contentMode="scaleToFill" id="LFx-sM-DGT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sA-g8-8ug">
+                                <rect key="frame" x="154" y="144" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QjX-4m-XIH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -136,6 +158,15 @@
                     <view key="view" contentMode="scaleToFill" id="scB-yJ-nV8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Explore Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRi-5a-xl6">
+                                <rect key="frame" x="137" y="147" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fHD-Yn-YBD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -152,6 +183,15 @@
                     <view key="view" contentMode="scaleToFill" id="ac9-xv-Ruh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfb-Ib-pJU">
+                                <rect key="frame" x="134" y="140" width="147" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="UJU-kf-wt5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -159,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rte-VO-2Eh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="299" y="673"/>
+            <point key="canvasLocation" x="298.55072463768118" y="672.99107142857144"/>
         </scene>
     </scenes>
     <resources>
