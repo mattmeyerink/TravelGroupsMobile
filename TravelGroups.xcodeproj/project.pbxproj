@@ -11,6 +11,7 @@
 		065F214C26A7A85900CC372D /* TripsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214B26A7A85900CC372D /* TripsPage.swift */; };
 		065F214E26A7A8B800CC372D /* ExplorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214D26A7A8B800CC372D /* ExplorePage.swift */; };
 		065F215026A7A92100CC372D /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214F26A7A92100CC372D /* ProfilePage.swift */; };
+		065F215226A7AFE900CC372D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F215126A7AFE900CC372D /* ContentView.swift */; };
 		06D098D0269146DF006A3559 /* TravelGroupsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D098CF269146DF006A3559 /* TravelGroupsApp.swift */; };
 		06D098D4269146E2006A3559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D098D3269146E2006A3559 /* Assets.xcassets */; };
 		06D098D7269146E2006A3559 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D098D6269146E2006A3559 /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		065F214B26A7A85900CC372D /* TripsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsPage.swift; sourceTree = "<group>"; };
 		065F214D26A7A8B800CC372D /* ExplorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePage.swift; sourceTree = "<group>"; };
 		065F214F26A7A92100CC372D /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		065F215126A7AFE900CC372D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		06D098CC269146DF006A3559 /* TravelGroups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGroups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D098CF269146DF006A3559 /* TravelGroupsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelGroupsApp.swift; sourceTree = "<group>"; };
 		06D098D3269146E2006A3559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				06D098D3269146E2006A3559 /* Assets.xcassets */,
 				06D098D8269146E2006A3559 /* Info.plist */,
 				06D098D5269146E2006A3559 /* Preview Content */,
+				065F215126A7AFE900CC372D /* ContentView.swift */,
 			);
 			path = TravelGroups;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			files = (
 				065F214E26A7A8B800CC372D /* ExplorePage.swift in Sources */,
 				06D098D0269146DF006A3559 /* TravelGroupsApp.swift in Sources */,
+				065F215226A7AFE900CC372D /* ContentView.swift in Sources */,
 				065F215026A7A92100CC372D /* ProfilePage.swift in Sources */,
 				065F214C26A7A85900CC372D /* TripsPage.swift in Sources */,
 				065F214A26A7A6A300CC372D /* MapPage.swift in Sources */,
