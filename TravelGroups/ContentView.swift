@@ -21,25 +21,25 @@ struct ContentView: View {
         TabView(selection: $selection) {
             TripsPage()
                 .tabItem{
-                    Label("Trips", systemImage: "star")
+                    Label("Trips", systemImage: "note.text")
                 }
                 .tag(Tab.trips)
             
             MapPage()
                 .tabItem{
-                    Label("Map", systemImage: "star")
+                    Label("Map", systemImage: "globe")
                 }
                 .tag(Tab.map)
             
             ExplorePage()
                 .tabItem{
-                    Label("Explore", systemImage: "star")
+                    Label("Explore", systemImage: "magnifyingglass")
                 }
                 .tag(Tab.explore)
             
             ProfilePage()
                 .tabItem{
-                    Label("Profile", systemImage: "star")
+                    Label("Profile", systemImage: "person.circle")
                 }
                 .tag(Tab.profile)
         }

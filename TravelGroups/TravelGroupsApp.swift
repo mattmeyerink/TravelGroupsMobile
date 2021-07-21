@@ -13,7 +13,7 @@ import SwiftUI
 struct TravelGroupsApp: App {
     var body: some Scene {
         WindowGroup {
-            MapPage()
+            ContentView()
         }
     }
 }
