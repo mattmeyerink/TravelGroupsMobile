@@ -10,8 +10,13 @@
 import SwiftUI
 
 struct TripRow: View {
+    var trip: Trip
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text(trip.name)
+            Text(trip.city + ", " + trip.state)
+        }
     }
 }
 
