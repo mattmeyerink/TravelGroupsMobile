@@ -12,6 +12,7 @@
 		065F214E26A7A8B800CC372D /* ExplorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214D26A7A8B800CC372D /* ExplorePage.swift */; };
 		065F215026A7A92100CC372D /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214F26A7A92100CC372D /* ProfilePage.swift */; };
 		065F215226A7AFE900CC372D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F215126A7AFE900CC372D /* ContentView.swift */; };
+		06B7B20426AA6CDB00EF4CA9 /* TripsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7B20326AA6CDB00EF4CA9 /* TripsList.swift */; };
 		06D098D0269146DF006A3559 /* TravelGroupsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D098CF269146DF006A3559 /* TravelGroupsApp.swift */; };
 		06D098D4269146E2006A3559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D098D3269146E2006A3559 /* Assets.xcassets */; };
 		06D098D7269146E2006A3559 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D098D6269146E2006A3559 /* Preview Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		065F214D26A7A8B800CC372D /* ExplorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePage.swift; sourceTree = "<group>"; };
 		065F214F26A7A92100CC372D /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		065F215126A7AFE900CC372D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		06B7B20326AA6CDB00EF4CA9 /* TripsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsList.swift; sourceTree = "<group>"; };
 		06D098CC269146DF006A3559 /* TravelGroups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGroups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D098CF269146DF006A3559 /* TravelGroupsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelGroupsApp.swift; sourceTree = "<group>"; };
 		06D098D3269146E2006A3559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,13 +82,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06B8B91E26994C7000731903 /* Views */ = {
+		06B7B20526AA6CEC00EF4CA9 /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				065F214B26A7A85900CC372D /* TripsPage.swift */,
+				06B7B20326AA6CDB00EF4CA9 /* TripsList.swift */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		06B7B20626AA6D0500EF4CA9 /* Map */ = {
 			isa = PBXGroup;
 			children = (
 				065F214926A7A6A300CC372D /* MapPage.swift */,
-				065F214F26A7A92100CC372D /* ProfilePage.swift */,
-				065F214B26A7A85900CC372D /* TripsPage.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		06B7B20726AA6D2300EF4CA9 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
 				065F214D26A7A8B800CC372D /* ExplorePage.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		06B7B20826AA6D3400EF4CA9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				065F214F26A7A92100CC372D /* ProfilePage.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		06B8B91E26994C7000731903 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06B7B20826AA6D3400EF4CA9 /* Profile */,
+				06B7B20726AA6D2300EF4CA9 /* Explore */,
+				06B7B20626AA6D0500EF4CA9 /* Map */,
+				06B7B20526AA6CEC00EF4CA9 /* Trips */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,10 +175,10 @@
 				06B8B91F26994C8200731903 /* Controllers */,
 				06B8B91E26994C7000731903 /* Views */,
 				06D098CF269146DF006A3559 /* TravelGroupsApp.swift */,
+				065F215126A7AFE900CC372D /* ContentView.swift */,
 				06D098D3269146E2006A3559 /* Assets.xcassets */,
 				06D098D8269146E2006A3559 /* Info.plist */,
 				06D098D5269146E2006A3559 /* Preview Content */,
-				065F215126A7AFE900CC372D /* ContentView.swift */,
 			);
 			path = TravelGroups;
 			sourceTree = "<group>";
@@ -307,6 +342,7 @@
 				06D098D0269146DF006A3559 /* TravelGroupsApp.swift in Sources */,
 				065F215226A7AFE900CC372D /* ContentView.swift in Sources */,
 				065F215026A7A92100CC372D /* ProfilePage.swift in Sources */,
+				06B7B20426AA6CDB00EF4CA9 /* TripsList.swift in Sources */,
 				065F214C26A7A85900CC372D /* TripsPage.swift in Sources */,
 				065F214A26A7A6A300CC372D /* MapPage.swift in Sources */,
 			);
