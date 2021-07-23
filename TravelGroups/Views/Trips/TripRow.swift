@@ -1,22 +1,22 @@
 //
-//  TripsList.swift
+//  TripRow.swift
 //  TravelGroups
 //
-//  View displays a list of trips
+//  This view displays one row in a list of trips
 //
 //  Created by Matthew Meyerink on 7/22/21.
 //
 
 import SwiftUI
 
-struct TripsList: View {
+struct TripRow: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct TripsList_Previews: PreviewProvider {
+struct TripRow_Previews: PreviewProvider {
     static var previews: some View {
-        TripsList()
+        TripRow()
     }
 }
