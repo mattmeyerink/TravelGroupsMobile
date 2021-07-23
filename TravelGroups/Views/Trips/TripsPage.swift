@@ -11,7 +11,10 @@ import SwiftUI
 
 struct TripsPage: View {
     var body: some View {
-        Text("This will be the trips page!")
+        VStack {
+            Text("This will be the trips page!")
+            TripRow(trip: trips[0])
+        }
     }
 }
 

@@ -1,61 +1,61 @@
 [
     {
-       id: 1,
-       name: "Summer 2021 CA Trip",
+       "id": 1,
+       "name": "Summer 2021 CA Trip",
        
-       city: "Hermosa Beach",
-       state: "CA",
-       postalCode: "90254",
-       country: "US"
+       "city": "Hermosa Beach",
+       "state": "CA",
+       "postalCode": "90254",
+       "country": "US",
        
-       description: "Trip to see Erika!"
+       "description": "Trip to see Erika!"
     },
     
     {
-        id: 2,
-        name: "Summer 2021 TX Trip",
+        "id": 2,
+        "name": "Summer 2021 TX Trip",
         
-        city: "Dallas",
-        state: "TX",
-        postalCode: "75204",
-        country: "US"
+        "city": "Dallas",
+        "state": "TX",
+        "postalCode": "75204",
+        "country": "US",
         
-        description: "Trip to see Kyle!"
+        "description": "Trip to see Kyle!"
     },
     
     {
-        id: 3,
-        name: "Summer 2021 FL Trip",
+        "id": 3,
+        "name": "Summer 2021 FL Trip",
         
-        city: "Estero",
-        state: "FL",
-        postalCode: "33928"
-        country: "US",
+        "city": "Estero",
+        "state": "FL",
+        "postalCode": "33928",
+        "country": "US",
         
-        description: "Golf trip with Jason!"
+        "description": "Golf trip with Jason!"
     },
     
     {
-        id: 4,
-        name: "Sleeping Bear Trip 2021 Round One",
+        "id": 4,
+        "name": "Sleeping Bear Trip 2021 Round One",
         
-        city: "Glen Arbor",
-        state: "MI",
-        postalCode: "49636",
-        country: "US",
+        "city": "Glen Arbor",
+        "state": "MI",
+        "postalCode": "49636",
+        "country": "US",
         
-        description: "Second trip of the summer to sleeping bear dunes with Mom!"
+        "description": "Second trip of the summer to sleeping bear dunes with Mom!"
     },
     
     {
-        id: 5,
-        name: "Sleeping Bear Trip 2021 Round Two",
+        "id": 5,
+        "name": "Sleeping Bear Trip 2021 Round Two",
         
-        city: "Glen Arbor",
-        state: "MI",
-        postalCode: "49636",
-        country: "US",
+        "city": "Glen Arbor",
+        "state": "MI",
+        "postalCode": "49636",
+        "country": "US",
         
-        description: "First trip of the summer to sleeing bear dunes with Erika!"
+        "description": "First trip of the summer to sleeing bear dunes with Erika!"
     }
 ]
