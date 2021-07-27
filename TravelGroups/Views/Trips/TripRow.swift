@@ -15,7 +15,8 @@ struct TripRow: View {
     var body: some View {
         HStack {
             Text(trip.name)
-            Text(trip.city + ", " + trip.state)
+                    .fontWeight(.bold)
+            Text(trip.startDate)
         }
     }
 }

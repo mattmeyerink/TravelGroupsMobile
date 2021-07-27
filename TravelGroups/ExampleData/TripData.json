@@ -8,7 +8,10 @@
        "postalCode": "90254",
        "country": "US",
        
-       "description": "Trip to see Erika!"
+       "description": "Trip to see Erika!",
+       
+       "startDate": "07/13/2021",
+       "endDate": "08/06/2021"
     },
     
     {
@@ -20,7 +23,10 @@
         "postalCode": "75204",
         "country": "US",
         
-        "description": "Trip to see Kyle!"
+        "description": "Trip to see Kyle!",
+        
+        "startDate": "07/13/2021",
+        "endDate": "08/06/2021"
     },
     
     {
@@ -32,7 +38,10 @@
         "postalCode": "33928",
         "country": "US",
         
-        "description": "Golf trip with Jason!"
+        "description": "Golf trip with Jason!",
+        
+        "startDate": "07/13/2021",
+        "endDate": "08/06/2021"
     },
     
     {
@@ -44,7 +53,10 @@
         "postalCode": "49636",
         "country": "US",
         
-        "description": "Second trip of the summer to sleeping bear dunes with Mom!"
+        "description": "Second trip of the summer to sleeping bear dunes with Mom!",
+        
+        "startDate": "07/13/2021",
+        "endDate": "08/06/2021"
     },
     
     {
@@ -56,6 +68,9 @@
         "postalCode": "49636",
         "country": "US",
         
-        "description": "First trip of the summer to sleeing bear dunes with Erika!"
+        "description": "First trip of the summer to sleeing bear dunes with Erika!",
+        
+        "startDate": "07/13/2021",
+        "endDate": "08/06/2021"
     }
 ]

@@ -49,7 +49,7 @@
 		065F215126A7AFE900CC372D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		06A40A7F26AB7BAA00115DF2 /* LoadSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSampleData.swift; sourceTree = "<group>"; };
 		06B7B20326AA6CDB00EF4CA9 /* TripsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsList.swift; sourceTree = "<group>"; };
-		06B7B20926AA6E1C00EF4CA9 /* TripRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRow.swift; sourceTree = "<group>"; };
+		06B7B20926AA6E1C00EF4CA9 /* TripRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRow.swift; sourceTree = "<group>"; usesTabs = 0; };
 		06B7B20B26AA6F4C00EF4CA9 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		06B7B20E26AA746000EF4CA9 /* TripData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TripData.json; sourceTree = "<group>"; };
 		06D098CC269146DF006A3559 /* TravelGroups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGroups.app; sourceTree = BUILT_PRODUCTS_DIR; };

@@ -19,4 +19,7 @@ struct Trip: Hashable, Codable {
     var postalCode: String
     
     var description: String
+    
+    var startDate: String
+    var endDate: String
 }
