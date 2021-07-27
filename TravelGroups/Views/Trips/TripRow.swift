@@ -16,7 +16,8 @@ struct TripRow: View {
         HStack {
             Text(trip.name)
                     .fontWeight(.bold)
-            Text(trip.startDate)
+            
+            Spacer()
         }
     }
 }

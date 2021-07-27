@@ -13,7 +13,7 @@ struct TripsPage: View {
     var body: some View {
         VStack {
             Text("This will be the trips page!")
-            TripRow(trip: trips[0])
+            TripsList()
         }
     }
 }
