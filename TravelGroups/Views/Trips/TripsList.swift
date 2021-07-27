@@ -11,9 +11,8 @@ import SwiftUI
 
 struct TripsList: View {
     var body: some View {
-        List {
-            TripRow(trip: trips[0])
-            TripRow(trip: trips[1])
+        List(trips) { trip in
+            TripRow(trip: trip)
         }
     }
 }

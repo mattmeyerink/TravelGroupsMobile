@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct Trip: Hashable, Codable {
+struct Trip: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     
