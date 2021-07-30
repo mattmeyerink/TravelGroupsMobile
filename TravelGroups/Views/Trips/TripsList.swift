@@ -10,6 +10,8 @@
 import SwiftUI
 
 struct TripsList: View {
+    var trips: [Trip]
+    
     var body: some View {
         NavigationView {
             List(trips) { trip in
@@ -23,6 +25,6 @@ struct TripsList: View {
 
 struct TripsList_Previews: PreviewProvider {
     static var previews: some View {
-        TripsList()
+        TripsList(trips: pastTrips)
     }
 }

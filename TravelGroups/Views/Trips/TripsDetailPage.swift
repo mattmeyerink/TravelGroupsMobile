@@ -19,6 +19,6 @@ struct TripsDetailPage: View {
 
 struct TripsDetailPage_Previews: PreviewProvider {
     static var previews: some View {
-        TripsDetailPage(trip: trips[0])
+        TripsDetailPage(trip: pastTrips[0])
     }
 }

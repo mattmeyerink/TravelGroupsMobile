@@ -10,7 +10,8 @@
 
 import Foundation
 
-var trips: [Trip] = load("TripData.json")
+var pastTrips: [Trip] = load("PastTripData.json")
+var futureTrips: [Trip] = load("FutureTripData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

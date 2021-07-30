@@ -24,6 +24,6 @@ struct TripRow: View {
 
 struct TripRow_Previews: PreviewProvider {
     static var previews: some View {
-        TripRow(trip: trips[0])
+        TripRow(trip: pastTrips[0])
     }
 }

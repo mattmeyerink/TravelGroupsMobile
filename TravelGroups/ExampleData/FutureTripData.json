@@ -1,0 +1,76 @@
+[
+    {
+       "id": 6,
+       "name": "Harry Potter World",
+       
+       "city": "Orlando",
+       "state": "FL",
+       "postalCode": "90254",
+       "country": "US",
+       
+       "description": "Trip to get the Harry Potter goods!",
+       
+       "startDate": "07/13/2021",
+       "endDate": "08/06/2021"
+    },
+    
+    {
+        "id": 7,
+        "name": "London Trip",
+        
+        "city": "London",
+        "state": "",
+        "postalCode": "75204",
+        "country": "UK",
+        
+        "description": "Trip to go see the Harry Potter sights",
+        
+        "startDate": "07/13/2021",
+        "endDate": "08/06/2021"
+    },
+    
+    {
+        "id": 8,
+        "name": "Big Sur",
+        
+        "city": "Big Sur",
+        "state": "CA",
+        "postalCode": "33928",
+        "country": "US",
+        
+        "description": "Trip with Erika to hike and see the views in Big Sur",
+        
+        "startDate": "07/13/2021",
+        "endDate": "08/06/2021"
+    },
+    
+    {
+        "id": 9,
+        "name": "Sleeping Bear Trip Again",
+        
+        "city": "Glen Arbor",
+        "state": "MI",
+        "postalCode": "49636",
+        "country": "US",
+        
+        "description": "Another trip here because this area is just the absolute best!",
+        
+        "startDate": "07/13/2021",
+        "endDate": "08/06/2021"
+    },
+    
+    {
+        "id": 10,
+        "name": "Hilton Head Trip",
+        
+        "city": "Glen Arbor",
+        "state": "MI",
+        "postalCode": "49636",
+        "country": "US",
+        
+        "description": "Hilton Head trip with the family",
+        
+        "startDate": "07/13/2021",
+        "endDate": "08/06/2021"
+    }
+]

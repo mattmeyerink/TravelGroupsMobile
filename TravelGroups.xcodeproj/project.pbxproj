@@ -13,11 +13,12 @@
 		065F214E26A7A8B800CC372D /* ExplorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214D26A7A8B800CC372D /* ExplorePage.swift */; };
 		065F215026A7A92100CC372D /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214F26A7A92100CC372D /* ProfilePage.swift */; };
 		065F215226A7AFE900CC372D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F215126A7AFE900CC372D /* ContentView.swift */; };
+		0695D47026B4C04700DECE11 /* FutureTripData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0695D46F26B4C04700DECE11 /* FutureTripData.json */; };
 		06A40A8026AB7BAA00115DF2 /* LoadSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A40A7F26AB7BAA00115DF2 /* LoadSampleData.swift */; };
 		06B7B20426AA6CDB00EF4CA9 /* TripsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7B20326AA6CDB00EF4CA9 /* TripsList.swift */; };
 		06B7B20A26AA6E1C00EF4CA9 /* TripRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7B20926AA6E1C00EF4CA9 /* TripRow.swift */; };
 		06B7B20C26AA6F4C00EF4CA9 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7B20B26AA6F4C00EF4CA9 /* Trip.swift */; };
-		06B7B20F26AA746000EF4CA9 /* TripData.json in Resources */ = {isa = PBXBuildFile; fileRef = 06B7B20E26AA746000EF4CA9 /* TripData.json */; };
+		06B7B20F26AA746000EF4CA9 /* PastTripData.json in Resources */ = {isa = PBXBuildFile; fileRef = 06B7B20E26AA746000EF4CA9 /* PastTripData.json */; };
 		06D098D0269146DF006A3559 /* TravelGroupsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D098CF269146DF006A3559 /* TravelGroupsApp.swift */; };
 		06D098D4269146E2006A3559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D098D3269146E2006A3559 /* Assets.xcassets */; };
 		06D098D7269146E2006A3559 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D098D6269146E2006A3559 /* Preview Assets.xcassets */; };
@@ -49,11 +50,12 @@
 		065F214D26A7A8B800CC372D /* ExplorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePage.swift; sourceTree = "<group>"; };
 		065F214F26A7A92100CC372D /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		065F215126A7AFE900CC372D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0695D46F26B4C04700DECE11 /* FutureTripData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FutureTripData.json; sourceTree = "<group>"; };
 		06A40A7F26AB7BAA00115DF2 /* LoadSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSampleData.swift; sourceTree = "<group>"; };
 		06B7B20326AA6CDB00EF4CA9 /* TripsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsList.swift; sourceTree = "<group>"; };
 		06B7B20926AA6E1C00EF4CA9 /* TripRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRow.swift; sourceTree = "<group>"; usesTabs = 0; };
 		06B7B20B26AA6F4C00EF4CA9 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
-		06B7B20E26AA746000EF4CA9 /* TripData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TripData.json; sourceTree = "<group>"; };
+		06B7B20E26AA746000EF4CA9 /* PastTripData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PastTripData.json; sourceTree = "<group>"; };
 		06D098CC269146DF006A3559 /* TravelGroups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGroups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D098CF269146DF006A3559 /* TravelGroupsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelGroupsApp.swift; sourceTree = "<group>"; };
 		06D098D3269146E2006A3559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,8 +132,9 @@
 		06B7B20D26AA73FB00EF4CA9 /* ExampleData */ = {
 			isa = PBXGroup;
 			children = (
-				06B7B20E26AA746000EF4CA9 /* TripData.json */,
+				06B7B20E26AA746000EF4CA9 /* PastTripData.json */,
 				06A40A7F26AB7BAA00115DF2 /* LoadSampleData.swift */,
+				0695D46F26B4C04700DECE11 /* FutureTripData.json */,
 			);
 			path = ExampleData;
 			sourceTree = "<group>";
@@ -336,8 +339,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				06D098D7269146E2006A3559 /* Preview Assets.xcassets in Resources */,
-				06B7B20F26AA746000EF4CA9 /* TripData.json in Resources */,
+				06B7B20F26AA746000EF4CA9 /* PastTripData.json in Resources */,
 				06D098D4269146E2006A3559 /* Assets.xcassets in Resources */,
+				0695D47026B4C04700DECE11 /* FutureTripData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
