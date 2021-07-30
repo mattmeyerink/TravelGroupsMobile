@@ -10,10 +10,17 @@
 import SwiftUI
 
 struct TripsPage: View {
+    @State private var showPastTrips = true
     var body: some View {
         VStack {
             Text("This will be the trips page!")
-            TripsList()
+            Toggle("Show Past Trips", isOn: $showPastTrips)
+            if showPastTrips {
+                TripsList()
+            } else {
+                TripsList()
+            }
+            
         }
     }
 }
