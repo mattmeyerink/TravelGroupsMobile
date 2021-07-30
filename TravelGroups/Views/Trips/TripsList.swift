@@ -11,8 +11,12 @@ import SwiftUI
 
 struct TripsList: View {
     var body: some View {
-        List(trips) { trip in
-            TripRow(trip: trip)
+        NavigationView {
+            List(trips) { trip in
+                NavigationLink(destination: TripsDetailPage(trip: trip)) {
+                    TripRow(trip: trip)
+                }
+            }
         }
     }
 }
