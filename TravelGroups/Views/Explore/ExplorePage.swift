@@ -11,7 +11,11 @@ import SwiftUI
 
 struct ExplorePage: View {
     var body: some View {
-        Text("This will be the Explore page!")
+        VStack {
+            Text("Explore")
+                .font(.largeTitle)
+            Text("This will be the Explore page!")
+        }
     }
 }
 

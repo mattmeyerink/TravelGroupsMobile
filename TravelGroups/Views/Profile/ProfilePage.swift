@@ -11,7 +11,11 @@ import SwiftUI
 
 struct ProfilePage: View {
     var body: some View {
-        Text("This will be the Profile Page")
+        VStack {
+            Text("Profile")
+                .font(.largeTitle)
+            Text("This will be the Profile Page")
+        }
     }
 }
 

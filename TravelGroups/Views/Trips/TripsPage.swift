@@ -15,6 +15,7 @@ struct TripsPage: View {
     var body: some View {
         VStack {
             Text("Trips")
+                .font(.largeTitle)
             Toggle(isOn: $showPastTrips) {
                 Text("Show past trips...")
             }
