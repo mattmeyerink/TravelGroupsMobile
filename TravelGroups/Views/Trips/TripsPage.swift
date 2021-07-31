@@ -19,6 +19,8 @@ struct TripsPage: View {
             Toggle(isOn: $showPastTrips) {
                 Text("Show past trips...")
             }
+            Text("The Current Trip will go HERE!")
+                .font(.largeTitle)
             if showPastTrips {
                 TripsList(trips: pastTrips, listTitle: "Past Trips")
             } else {
