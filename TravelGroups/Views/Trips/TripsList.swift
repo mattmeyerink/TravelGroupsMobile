@@ -11,6 +11,7 @@ import SwiftUI
 
 struct TripsList: View {
     var trips: [Trip]
+    var listTitle: String
     
     var body: some View {
         NavigationView {
@@ -19,12 +20,13 @@ struct TripsList: View {
                     TripRow(trip: trip)
                 }
             }
+            .navigationTitle(listTitle)
         }
     }
 }
 
 struct TripsList_Previews: PreviewProvider {
     static var previews: some View {
-        TripsList(trips: pastTrips)
+        TripsList(trips: pastTrips, listTitle: "Past Trips")
     }
 }

@@ -19,9 +19,9 @@ struct TripsPage: View {
                 Text("Show past trips...")
             }
             if showPastTrips {
-                TripsList(trips: pastTrips)
+                TripsList(trips: pastTrips, listTitle: "Past Trips")
             } else {
-                TripsList(trips: futureTrips)
+                TripsList(trips: futureTrips, listTitle: "Future Trips")
             }
             
         }
