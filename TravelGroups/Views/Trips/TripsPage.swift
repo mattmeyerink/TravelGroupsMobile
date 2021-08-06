@@ -25,8 +25,9 @@ struct TripsPage: View {
                 }
             }
             
-            Text("Your Current Trip will go HERE!")
+            Text("Your FAVORITE Trip will go HERE!")
                 .font(.largeTitle)
+                .padding()
             
             HStack {
                 showPastTrips ? Text("My Past Trips") : Text("My Future Trips")

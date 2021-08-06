@@ -11,7 +11,9 @@
        "description": "Trip to get the Harry Potter goods!",
        
        "startDate": "07/13/2021",
-       "endDate": "08/06/2021"
+       "endDate": "08/06/2021",
+       
+       "isFavoriteTrip": false
     },
     
     {
@@ -26,7 +28,9 @@
         "description": "Trip to go see the Harry Potter sights",
         
         "startDate": "07/13/2021",
-        "endDate": "08/06/2021"
+        "endDate": "08/06/2021",
+        
+        "isFavoriteTrip": false
     },
     
     {
@@ -41,7 +45,9 @@
         "description": "Trip with Erika to hike and see the views in Big Sur",
         
         "startDate": "07/13/2021",
-        "endDate": "08/06/2021"
+        "endDate": "08/06/2021",
+        
+        "isFavoriteTrip": false
     },
     
     {
@@ -56,7 +62,9 @@
         "description": "Another trip here because this area is just the absolute best!",
         
         "startDate": "07/13/2021",
-        "endDate": "08/06/2021"
+        "endDate": "08/06/2021",
+        
+        "isFavoriteTrip": false
     },
     
     {
@@ -71,6 +79,8 @@
         "description": "Hilton Head trip with the family",
         
         "startDate": "07/13/2021",
-        "endDate": "08/06/2021"
+        "endDate": "08/06/2021",
+        
+        "isFavoriteTrip": false
     }
 ]

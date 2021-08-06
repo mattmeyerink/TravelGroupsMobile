@@ -22,4 +22,6 @@ struct Trip: Hashable, Codable, Identifiable {
     
     var startDate: String
     var endDate: String
+    
+    var isFavoriteTrip: Bool
 }

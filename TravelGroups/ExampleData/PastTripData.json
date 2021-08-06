@@ -11,7 +11,9 @@
        "description": "Trip to see Erika!",
        
        "startDate": "07/13/2021",
-       "endDate": "08/06/2021"
+       "endDate": "08/06/2021",
+       
+       "isFavoriteTrip": false
     },
     
     {
@@ -26,7 +28,10 @@
         "description": "Trip to see Kyle!",
         
         "startDate": "07/13/2021",
-        "endDate": "08/06/2021"
+        "endDate": "08/06/2021",
+        
+        "isFavoriteTrip": false
+
     },
     
     {
@@ -41,7 +46,9 @@
         "description": "Golf trip with Jason!",
         
         "startDate": "07/13/2021",
-        "endDate": "08/06/2021"
+        "endDate": "08/06/2021",
+        
+        "isFavoriteTrip": false
     },
     
     {
@@ -56,7 +63,9 @@
         "description": "Second trip of the summer to sleeping bear dunes with Mom!",
         
         "startDate": "07/13/2021",
-        "endDate": "08/06/2021"
+        "endDate": "08/06/2021",
+        
+        "isFavoriteTrip": true
     },
     
     {
@@ -71,6 +80,8 @@
         "description": "First trip of the summer to sleeing bear dunes with Erika!",
         
         "startDate": "07/13/2021",
-        "endDate": "08/06/2021"
+        "endDate": "08/06/2021",
+        
+        "isFavoriteTrip": false
     }
 ]
