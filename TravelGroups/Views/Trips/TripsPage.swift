@@ -14,25 +14,26 @@ struct TripsPage: View {
     
     var body: some View {
         VStack {
-            Text("Trips")
-                .font(.largeTitle)
-            
-            Text("The Current Trip will go HERE!")
-                .font(.largeTitle)
-            
-            HStack(spacing: 50) {
-                Text("Show Past Trips")
-                Toggle(isOn: $showPastTrips){}
+            HStack {
+                Text("Trips")
+                    .font(.largeTitle)
                 
-                Text("Add New Trip")
                 Button(action: {
                     print("Create new Trip")
                 }) {
                     Image(systemName: "plus")
                 }
             }
-                .padding(.horizontal, 50)
             
+            Text("Your Current Trip will go HERE!")
+                .font(.largeTitle)
+            
+            HStack {
+                showPastTrips ? Text("My Past Trips") : Text("My Future Trips")
+                Toggle(isOn: $showPastTrips){}
+            }
+                .padding()
+        
             if showPastTrips {
                 TripsList(trips: pastTrips, listTitle: "Past Trips")
             } else {
