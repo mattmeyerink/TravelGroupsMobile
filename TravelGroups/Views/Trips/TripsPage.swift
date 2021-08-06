@@ -13,34 +13,32 @@ struct TripsPage: View {
     @State private var showPastTrips: Bool = false
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("Trips")
-                    .font(.largeTitle)
+        NavigationView {
+            VStack {
+                HStack {
+                    Toggle(isOn: $showPastTrips){}
+                    Text("Trips")
+                        .font(.largeTitle)
+                    
+                    Button(action: {
+                        print("Create new Trip")
+                    }) {
+                        Image(systemName: "plus")
+                    }
+                }
                 
-                Button(action: {
-                    print("Create new Trip")
-                }) {
-                    Image(systemName: "plus")
+                Text("Your FAVORITE Trip will go HERE!")
+                    .font(.largeTitle)
+                    .padding()
+                
+                showPastTrips ? Text("My Past Trips").font(.title) : Text("My Future Trips").font(.title)
+            
+                if showPastTrips {
+                    TripsList(trips: pastTrips)
+                } else {
+                    TripsList(trips: futureTrips)
                 }
             }
-            
-            Text("Your FAVORITE Trip will go HERE!")
-                .font(.largeTitle)
-                .padding()
-            
-            HStack {
-                showPastTrips ? Text("My Past Trips") : Text("My Future Trips")
-                Toggle(isOn: $showPastTrips){}
-            }
-                .padding()
-        
-            if showPastTrips {
-                TripsList(trips: pastTrips, listTitle: "Past Trips")
-            } else {
-                TripsList(trips: futureTrips, listTitle: "Future Trips")
-            }
-            
         }
     }
 }
