@@ -19,10 +19,7 @@ struct TripsPage: View {
                     Toggle(isOn: $showPastTrips){}
                     Text("Trips")
                         .font(.largeTitle)
-                    
-                    Button(action: {
-                        print("Create new Trip")
-                    }) {
+                    NavigationLink (destination: TripFormPage(trip: generateBlankTrip())) {
                         Image(systemName: "plus")
                     }
                 }
@@ -47,4 +44,20 @@ struct TripsPage_Previews: PreviewProvider {
     static var previews: some View {
         TripsPage()
     }
+}
+
+// Returns a blank trip
+func generateBlankTrip() -> Trip {
+    return Trip(
+        id: -1,
+        name: "",
+        city: "",
+        state: "",
+        country: "",
+        postalCode: "",
+        description: "",
+        startDate: "",
+        endDate: "",
+        isFavoriteTrip: false
+    )
 }

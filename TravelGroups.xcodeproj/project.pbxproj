@@ -25,6 +25,7 @@
 		06D098D7269146E2006A3559 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D098D6269146E2006A3559 /* Preview Assets.xcassets */; };
 		06D098E2269146E2006A3559 /* TravelGroupsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D098E1269146E2006A3559 /* TravelGroupsTests.swift */; };
 		06D098ED269146E2006A3559 /* TravelGroupsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D098EC269146E2006A3559 /* TravelGroupsUITests.swift */; };
+		06D7B70326BDF0D000F5980E /* TripFormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D7B70226BDF0D000F5980E /* TripFormPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		06D098E8269146E2006A3559 /* TravelGroupsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelGroupsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D098EC269146E2006A3559 /* TravelGroupsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelGroupsUITests.swift; sourceTree = "<group>"; };
 		06D098EE269146E2006A3559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06D7B70226BDF0D000F5980E /* TripFormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFormPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				06B7B20326AA6CDB00EF4CA9 /* TripsList.swift */,
 				06B7B20926AA6E1C00EF4CA9 /* TripRow.swift */,
 				0616107226B3BAA000988C7D /* TripsDetailPage.swift */,
+				06D7B70226BDF0D000F5980E /* TripFormPage.swift */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				06B7B20A26AA6E1C00EF4CA9 /* TripRow.swift in Sources */,
 				0616107326B3BAA000988C7D /* TripsDetailPage.swift in Sources */,
 				06A40A8026AB7BAA00115DF2 /* LoadSampleData.swift in Sources */,
+				06D7B70326BDF0D000F5980E /* TripFormPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

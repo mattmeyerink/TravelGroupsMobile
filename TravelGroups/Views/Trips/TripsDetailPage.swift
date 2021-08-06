@@ -13,7 +13,14 @@ struct TripsDetailPage: View {
     var trip: Trip
     
     var body: some View {
-        Text("Detil page for the " + trip.name + " trip!")
+        HStack {
+            Text(trip.name)
+                .font(.title)
+            
+            NavigationLink(destination: TripFormPage(trip: trip)) {
+                Text("Edit")
+            }
+        }
     }
 }
 
