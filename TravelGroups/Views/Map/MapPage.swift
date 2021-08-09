@@ -11,11 +11,7 @@ import SwiftUI
 
 struct MapPage: View {
     var body: some View {
-        VStack {
-            Text("Map")
-                .font(.largeTitle)
-            Text("This will be the map page!")
-        }
+        MapView()
     }
 }
 
