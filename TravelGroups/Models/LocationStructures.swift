@@ -12,4 +12,6 @@ import Foundation
 struct Geocode: Hashable, Codable {
     var latitude: Double
     var longitude: Double
+    
+    var error: String
 }
