@@ -16,19 +16,29 @@ class Geocoder {
     
     init(_ address: String) {
         self.address = address
+        
+        self.geocode(completion: {
+            success, coordinate in
+            
+            if success {
+                print(coordinate?.latitude)
+                print(coordinate?.longitude)
+            } else {
+                print("There was an error in the geocoder")
+            }
+        })
     }
     
-    func geocode() -> Geocode {
-        // Initialize geocode to return
-        var outputGeocode = Geocode(latitude: 0, longitude: 0, error: "")
-        
+    func geocode(completion: @escaping (Bool, CLLocationCoordinate2D?) -> ()) -> Void {
         // Send the request to the geocoder
         geocoder.geocodeAddressString(self.address) { (placemarks, error) in
             
-            // Check to ensure the geocoder didn't error out
             if error != nil {
-                outputGeocode.error = "There was an error inside the Geocoder"
+                // If the geocoder errored out log it and halt the completion
+                print("There was an error within the geocoder")
+                completion(false, nil)
             } else {
+                
                 var location: CLLocation?
                 
                 // Grab the first returned location in the response
@@ -38,14 +48,12 @@ class Geocoder {
                 
                 // Pull the latitude and logitude from the response
                 if let location = location {
-                    outputGeocode.latitude = location.coordinate.latitude
-                    outputGeocode.latitude = location.coordinate.longitude
+                    completion(true, location.coordinate)
                 } else {
-                    outputGeocode.error = "No location was found"
+                    print("No location was found")
+                    completion(false, nil)
                 }
             }
         }
-        
-        return outputGeocode
     }
 }

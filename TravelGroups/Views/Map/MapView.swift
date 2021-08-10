@@ -9,10 +9,11 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    var geocoder = Geocoder("20999 Greenbriar Lane, South Lyon, MI, 48178")
     @State var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
-            latitude: 42.4606,
-            longitude: 83.6516
+            latitude: 42.435841,
+            longitude: -83.6407197
         ),
         span: MKCoordinateSpan(
             latitudeDelta: 10,
@@ -34,3 +35,5 @@ struct MapView_Previews: PreviewProvider {
         MapView()
     }
 }
+
+
