@@ -10,7 +10,7 @@
 import Foundation
 import CoreLocation
 
-struct Trip {
+struct Trip: Identifiable, Hashable, Codable {
     var id: Int
     var name: String
     

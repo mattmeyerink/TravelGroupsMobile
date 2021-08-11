@@ -26,6 +26,8 @@ func getSampleTripData() -> [Trip] {
         endDate: "08/06/2021",
         isFavoriteTrip: false
     )
+    var sampleGeocode: Geocode = Geocode(latitude: 33.862141, longitude: -118.400009)
+    sampleTrip.setGeocode(geocode: sampleGeocode)
     trips.append(sampleTrip)
     
     sampleTrip = Trip(
@@ -40,6 +42,8 @@ func getSampleTripData() -> [Trip] {
         endDate: "08/06/2021",
         isFavoriteTrip: false
     )
+    sampleGeocode = Geocode(latitude: 32.779167, longitude: -96.808891)
+    sampleTrip.setGeocode(geocode: sampleGeocode)
     trips.append(sampleTrip)
     
     sampleTrip = Trip(
@@ -54,6 +58,8 @@ func getSampleTripData() -> [Trip] {
         endDate: "08/06/2021",
         isFavoriteTrip: false
     )
+    sampleGeocode = Geocode(latitude: 26.438135, longitude: -81.806755)
+    sampleTrip.setGeocode(geocode: sampleGeocode)
     trips.append(sampleTrip)
     
     sampleTrip = Trip(
@@ -68,6 +74,8 @@ func getSampleTripData() -> [Trip] {
         endDate: "08/06/2021",
         isFavoriteTrip: false
     )
+    sampleGeocode = Geocode(latitude: 44.897739, longitude: -85.991600)
+    sampleTrip.setGeocode(geocode: sampleGeocode)
     trips.append(sampleTrip)
     
     sampleTrip = Trip(
@@ -82,6 +90,8 @@ func getSampleTripData() -> [Trip] {
         endDate: "08/06/2021",
         isFavoriteTrip: false
     )
+    sampleGeocode = Geocode(latitude: 44.897739, longitude: -85.991600)
+    sampleTrip.setGeocode(geocode: sampleGeocode)
     trips.append(sampleTrip)
     
     sampleTrip = Trip(
@@ -96,6 +106,8 @@ func getSampleTripData() -> [Trip] {
         endDate: "08/06/2021",
         isFavoriteTrip: false
     )
+    sampleGeocode = Geocode(latitude: 28.538336, longitude: -81.379234)
+    sampleTrip.setGeocode(geocode: sampleGeocode)
     trips.append(sampleTrip)
     
     sampleTrip = Trip(
@@ -110,6 +122,8 @@ func getSampleTripData() -> [Trip] {
         endDate: "08/06/2021",
         isFavoriteTrip: false
     )
+    sampleGeocode = Geocode(latitude: 51.507351, longitude: -0.127758)
+    sampleTrip.setGeocode(geocode: sampleGeocode)
     trips.append(sampleTrip)
     
     sampleTrip = Trip(
@@ -124,6 +138,8 @@ func getSampleTripData() -> [Trip] {
         endDate: "08/06/2021",
         isFavoriteTrip: false
     )
+    sampleGeocode = Geocode(latitude: 36.252880, longitude: -121.787354)
+    sampleTrip.setGeocode(geocode: sampleGeocode)
     trips.append(sampleTrip)
     
     sampleTrip = Trip(
@@ -138,6 +154,8 @@ func getSampleTripData() -> [Trip] {
         endDate: "08/06/2021",
         isFavoriteTrip: false
     )
+    sampleGeocode = Geocode(latitude: 44.897739, longitude: -85.991600)
+    sampleTrip.setGeocode(geocode: sampleGeocode)
     trips.append(sampleTrip)
     
     sampleTrip = Trip(
@@ -152,6 +170,8 @@ func getSampleTripData() -> [Trip] {
         endDate: "08/06/2021",
         isFavoriteTrip: false
     )
+    sampleGeocode = Geocode(latitude: 32.178890, longitude: -80.743057)
+    sampleTrip.setGeocode(geocode: sampleGeocode)
     trips.append(sampleTrip)
     
     return trips
