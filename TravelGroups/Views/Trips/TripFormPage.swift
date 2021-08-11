@@ -25,6 +25,6 @@ struct TripFormPage: View {
 
 struct TripFormPage_Previews: PreviewProvider {
     static var previews: some View {
-        TripFormPage(trip: pastTrips[0])
+        TripFormPage(trip: sampleTrips[0])
     }
 }

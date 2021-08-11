@@ -8,6 +8,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct Trip: Hashable, Codable, Identifiable {
     var id: Int

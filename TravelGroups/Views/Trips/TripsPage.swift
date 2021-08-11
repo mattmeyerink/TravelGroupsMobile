@@ -12,6 +12,9 @@ import SwiftUI
 struct TripsPage: View {
     @State private var showPastTrips: Bool = false
     
+    var pastTrips: [Trip] = Array(sampleTrips[...4])
+    var futureTrips: [Trip] = Array(sampleTrips[5...])
+    
     var body: some View {
         NavigationView {
             VStack {

@@ -23,6 +23,6 @@ struct TripsList: View {
 
 struct TripsList_Previews: PreviewProvider {
     static var previews: some View {
-        TripsList(trips: pastTrips)
+        TripsList(trips: Array(sampleTrips[...5]))
     }
 }
