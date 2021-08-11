@@ -10,7 +10,7 @@
 import Foundation
 import CoreLocation
 
-struct Trip: Hashable, Codable, Identifiable {
+struct Trip {
     var id: Int
     var name: String
     
@@ -25,4 +25,10 @@ struct Trip: Hashable, Codable, Identifiable {
     var endDate: String
     
     var isFavoriteTrip: Bool
+    
+    var geocode: Geocode? = nil
+    
+    mutating func setGeocode(geocode: Geocode) -> Void {
+        self.geocode = geocode
+    }
 }
