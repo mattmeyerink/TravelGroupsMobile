@@ -8,10 +8,14 @@
 //
 
 import SwiftUI
+import UIKit
+import CoreLocation
+import MapKit
 
 struct MapPage: View {
     var body: some View {
         MapView()
+            .edgesIgnoringSafeArea(.all)
     }
 }
 

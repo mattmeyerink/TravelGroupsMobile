@@ -7,26 +7,15 @@
 
 import SwiftUI
 import MapKit
+import UIKit
 
-struct MapView: View {
-    var geocoder = Geocoder("20999 Greenbriar Lane, South Lyon, MI, 48178")
-    @State var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(
-            latitude: 42.435841,
-            longitude: -83.6407197
-        ),
-        span: MKCoordinateSpan(
-            latitudeDelta: 10,
-            longitudeDelta: 10
-        )
-    )
+struct MapView: UIViewRepresentable {
+    func makeUIView(context: UIViewRepresentableContext<MapView>) -> MKMapView {
+        let mapView = MKMapView()
+        return mapView
+    }
     
-    var body: some View {
-        Map(
-            coordinateRegion: $region,
-            interactionModes: MapInteractionModes.all
-        )
-            .edgesIgnoringSafeArea(.all)
+    func updateUIView(_ view: MKMapView, context: UIViewRepresentableContext<MapView>) {
     }
 }
 
