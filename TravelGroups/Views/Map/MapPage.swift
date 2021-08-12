@@ -13,8 +13,10 @@ import CoreLocation
 import MapKit
 
 struct MapPage: View {
+    var trips: [Trip] = sampleTrips
+    
     var body: some View {
-        MapView()
+        MapView(pins: generatePinsFromTrips(trips: trips))
             .edgesIgnoringSafeArea(.all)
     }
 }
@@ -23,4 +25,12 @@ struct MapPage_Previews: PreviewProvider {
     static var previews: some View {
         MapPage()
     }
+}
+
+func generatePinsFromTrips(trips: [Trip]) -> [MKAnnotation] {
+    var pins: [MKAnnotation] = []
+    for trip in trips {
+        pins.append(TripPin(title: trip.name, geocode: trip.geocode!, subtitle: trip.description))
+    }
+    return pins
 }

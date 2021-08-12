@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0616107326B3BAA000988C7D /* TripsDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0616107226B3BAA000988C7D /* TripsDetailPage.swift */; };
 		0626B1EB26B6FDE80092B292 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0626B1EA26B6FDE80092B292 /* MapView.swift */; };
+		063D63C726C4D1CA00810D86 /* TripPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D63C626C4D1CA00810D86 /* TripPin.swift */; };
 		065F214A26A7A6A300CC372D /* MapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214926A7A6A300CC372D /* MapPage.swift */; };
 		065F214C26A7A85900CC372D /* TripsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214B26A7A85900CC372D /* TripsPage.swift */; };
 		065F214E26A7A8B800CC372D /* ExplorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214D26A7A8B800CC372D /* ExplorePage.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		0616107226B3BAA000988C7D /* TripsDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsDetailPage.swift; sourceTree = "<group>"; };
 		0626B1EA26B6FDE80092B292 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		063D63C626C4D1CA00810D86 /* TripPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripPin.swift; path = ../../../../.Trash/TripPin.swift; sourceTree = "<group>"; };
 		065F214926A7A6A300CC372D /* MapPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPage.swift; sourceTree = "<group>"; };
 		065F214B26A7A85900CC372D /* TripsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsPage.swift; sourceTree = "<group>"; };
 		065F214D26A7A8B800CC372D /* ExplorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePage.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				06B7B20B26AA6F4C00EF4CA9 /* Trip.swift */,
+				063D63C626C4D1CA00810D86 /* TripPin.swift */,
 				06B1561026C0C020003131FF /* LocationStructures.swift */,
 			);
 			path = Models;
@@ -384,6 +387,7 @@
 				06B1561126C0C020003131FF /* LocationStructures.swift in Sources */,
 				0616107326B3BAA000988C7D /* TripsDetailPage.swift in Sources */,
 				06A40A8026AB7BAA00115DF2 /* LoadSampleData.swift in Sources */,
+				063D63C726C4D1CA00810D86 /* TripPin.swift in Sources */,
 				06D7B70326BDF0D000F5980E /* TripFormPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
