@@ -28,6 +28,8 @@ struct Trip: Identifiable, Hashable, Codable {
     
     var geocode: Geocode? = nil
     
+    var headerPhoto: String
+    
     mutating func setGeocode(geocode: Geocode) -> Void {
         self.geocode = geocode
     }
