@@ -19,29 +19,37 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            TripsPage()
+            NavigationView {
+                TripsPage()
+            }
                 .tabItem{
                     Label("Trips", systemImage: "note.text")
                 }
                 .tag(Tab.trips)
             
-            MapPage()
+            NavigationView {
+                MapPage()
+            }
                 .tabItem{
                     Label("Map", systemImage: "globe")
                 }
                 .tag(Tab.map)
             
-            ExplorePage()
+            NavigationView {
+                ExplorePage()
+            }
                 .tabItem{
                     Label("Explore", systemImage: "magnifyingglass")
                 }
                 .tag(Tab.explore)
             
-            ProfilePage()
+            NavigationView {
+                ProfilePage()
+            }
                 .tabItem{
                     Label("Profile", systemImage: "person.circle")
                 }
-                .tag(Tab.profile)
+                    .tag(Tab.profile)
         }
     }
 }

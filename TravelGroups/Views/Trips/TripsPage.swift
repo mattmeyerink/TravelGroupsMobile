@@ -16,28 +16,26 @@ struct TripsPage: View {
     var futureTrips: [Trip] = Array(sampleTrips[5...])
     
     var body: some View {
-        NavigationView {
-            VStack {
-                HStack {
-                    Toggle(isOn: $showPastTrips){}
-                    Text("Trips")
-                        .font(.largeTitle)
-                    NavigationLink (destination: TripFormPage(trip: generateBlankTrip())) {
-                        Image(systemName: "plus")
-                    }
-                }
-                
-                Text("Your FAVORITE Trip will go HERE!")
+        VStack {
+            HStack {
+                Toggle(isOn: $showPastTrips){}
+                Text("Trips")
                     .font(.largeTitle)
-                    .padding()
-                
-                showPastTrips ? Text("My Past Trips").font(.title) : Text("My Future Trips").font(.title)
-            
-                if showPastTrips {
-                    TripsList(trips: pastTrips)
-                } else {
-                    TripsList(trips: futureTrips)
+                NavigationLink (destination: TripFormPage(trip: generateBlankTrip())) {
+                    Image(systemName: "plus")
                 }
+            }
+            
+            Text("Your FAVORITE Trip will go HERE!")
+                .font(.largeTitle)
+                .padding()
+            
+            showPastTrips ? Text("My Past Trips").font(.title) : Text("My Future Trips").font(.title)
+        
+            if showPastTrips {
+                TripsList(trips: pastTrips)
+            } else {
+                TripsList(trips: futureTrips)
             }
         }
     }
@@ -61,6 +59,7 @@ func generateBlankTrip() -> Trip {
         description: "",
         startDate: "",
         endDate: "",
-        isFavoriteTrip: false
+        isFavoriteTrip: false,
+        headerPhoto: ""
     )
 }
