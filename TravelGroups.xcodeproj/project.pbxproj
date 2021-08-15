@@ -174,13 +174,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		06B8B92126994CB500731903 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		06D098C3269146DF006A3559 = {
 			isa = PBXGroup;
 			children = (
@@ -205,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				06B7B20D26AA73FB00EF4CA9 /* ExampleData */,
-				06B8B92126994CB500731903 /* Utils */,
 				06B8B92026994CA100731903 /* Models */,
 				06B8B91F26994C8200731903 /* Controllers */,
 				06B8B91E26994C7000731903 /* Views */,

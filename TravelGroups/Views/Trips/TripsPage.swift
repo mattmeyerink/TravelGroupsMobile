@@ -37,6 +37,7 @@ struct TripsPage: View {
             } else {
                 TripsList(trips: futureTrips)
             }
+            Spacer()
         }
     }
 }

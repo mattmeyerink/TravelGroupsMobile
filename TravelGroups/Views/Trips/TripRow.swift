@@ -8,6 +8,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct TripRow: View {
     var trip: Trip
@@ -15,10 +16,15 @@ struct TripRow: View {
     var body: some View {
         HStack {
             Text(trip.name)
-                    .fontWeight(.bold)
-            
+                .fontWeight(.none)
+                .font(.system(size: 20))
+                .foregroundColor(.black)
             Spacer()
+            Image(systemName: "chevron.right")
+                .foregroundColor(.black)
         }
+            .padding()
+            .border(Color.gray)
     }
 }
 
