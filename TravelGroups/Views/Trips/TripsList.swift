@@ -13,11 +13,9 @@ struct TripsList: View {
     var trips: [Trip]
     
     var body: some View {
-        ScrollView {
-            ForEach(trips) { trip in
-                NavigationLink(destination: TripsDetailPage(trip: trip)) {
-                    TripRow(trip: trip)
-                }
+        ForEach(trips) { trip in
+            NavigationLink(destination: TripsDetailPage(trip: trip)) {
+                TripRow(trip: trip)
             }
         }
     }

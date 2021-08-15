@@ -18,43 +18,43 @@ struct TripsPage: View {
     var favoriteTrip: Trip = getFavoriteTrip(trips: sampleTrips)
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("Trips")
-                    .font(.largeTitle)
-                NavigationLink (destination: TripFormPage(trip: generateBlankTrip())) {
-                    Image(systemName: "plus")
-                }
-            }
-            
-            NavigationLink (destination: TripsDetailPage(trip: favoriteTrip)) {
-                ZStack (alignment: .bottomLeading){
-                    Image(favoriteTrip.headerPhoto)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 400, height: 200, alignment: .center)
-                        .clipped()
-                    
-                    VStack (alignment: .leading){
-                        Text(favoriteTrip.name)
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color.white)
-                        Text(favoriteTrip.description)
-                            .fontWeight(.none)
-                            .foregroundColor(Color.white)
-                    }
-                        .padding()
-                }
-            }
+        ScrollView {
+            VStack {
+                NavigationLink (destination: TripsDetailPage(trip: favoriteTrip)) {
+                    ZStack (alignment: .bottomLeading){
+                        Image(favoriteTrip.headerPhoto)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 400, height: 200, alignment: .center)
+                            .clipped()
                         
-            showPastTrips ? Text("My Past Trips").font(.title) : Text("My Future Trips").font(.title)
-        
-            if showPastTrips {
-                TripsList(trips: pastTrips)
-            } else {
-                TripsList(trips: futureTrips)
+                        VStack (alignment: .leading){
+                            Text(favoriteTrip.name)
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color.white)
+                            Text(favoriteTrip.description)
+                                .fontWeight(.none)
+                                .foregroundColor(Color.white)
+                        }
+                            .padding()
+                    }
+                }
+                            
+                showPastTrips ? Text("My Past Trips").font(.title) : Text("My Future Trips").font(.title)
+            
+                if showPastTrips {
+                    TripsList(trips: pastTrips)
+                } else {
+                    TripsList(trips: futureTrips)
+                }
             }
         }
+        .navigationBarTitle("My Trips")
+        .navigationBarItems(trailing:
+                                NavigationLink (destination: TripFormPage(trip: generateBlankTrip())) {
+                                    Image(systemName: "plus")
+                                }
+        )
     }
 }
 
