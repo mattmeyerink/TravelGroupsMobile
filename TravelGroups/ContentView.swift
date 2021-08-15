@@ -21,6 +21,7 @@ struct ContentView: View {
         TabView(selection: $selection) {
             NavigationView {
                 TripsPage()
+                Spacer()
             }
                 .tabItem{
                     Label("Trips", systemImage: "note.text")

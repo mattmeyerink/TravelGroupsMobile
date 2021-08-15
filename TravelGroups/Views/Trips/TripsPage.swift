@@ -15,10 +15,11 @@ struct TripsPage: View {
     var pastTrips: [Trip] = Array(sampleTrips[...4])
     var futureTrips: [Trip] = Array(sampleTrips[5...])
     
+    var favoriteTrip: Trip = getFavoriteTrip(trips: sampleTrips)
+    
     var body: some View {
         VStack {
             HStack {
-                Toggle(isOn: $showPastTrips){}
                 Text("Trips")
                     .font(.largeTitle)
                 NavigationLink (destination: TripFormPage(trip: generateBlankTrip())) {
@@ -26,9 +27,11 @@ struct TripsPage: View {
                 }
             }
             
-            Text("Your FAVORITE Trip will go HERE!")
-                .font(.largeTitle)
-                .padding()
+            Image(favoriteTrip.headerPhoto)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 400, height: 200, alignment: .center)
+                .clipped()
             
             showPastTrips ? Text("My Past Trips").font(.title) : Text("My Future Trips").font(.title)
         
@@ -37,7 +40,6 @@ struct TripsPage: View {
             } else {
                 TripsList(trips: futureTrips)
             }
-            Spacer()
         }
     }
 }
@@ -63,4 +65,18 @@ func generateBlankTrip() -> Trip {
         isFavoriteTrip: false,
         headerPhoto: ""
     )
+}
+
+// Returns the users favorite trip out of an array of trips
+func getFavoriteTrip(trips: [Trip]) -> Trip {
+    var favoriteTrip: Trip
+    
+    for trip in trips {
+        if trip.isFavoriteTrip {
+            favoriteTrip = trip
+            return favoriteTrip
+        }
+    }
+    
+    return trips[0]
 }
