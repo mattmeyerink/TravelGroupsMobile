@@ -11,21 +11,64 @@ import SwiftUI
 
 struct TripsDetailPage: View {
     var trip: Trip
+    var activities: [Activity]
     
     var body: some View {
-        HStack {
-            Text(trip.name)
-                .font(.title)
-            
-            NavigationLink(destination: TripFormPage(trip: trip)) {
-                Text("Edit")
+        ScrollView {
+            HStack {
+                VStack (alignment: .leading) {
+                    Text(trip.description)
+                        .padding()
+                    
+                    Text("Trip Information")
+                        .font(.title)
+                    Text("Start Date: " + trip.startDate)
+                    Text("End Date: " + trip.endDate)
+                    Text("Location: " + generateCleanAddress(trip: trip))
+                    
+                    Text("Activities")
+                        .font(.title)
+                    
+                    Text("Photos")
+                        .font(.title)
+                }
+                    .padding()
+                Spacer()
             }
         }
+            .navigationBarTitle(trip.name)
+            .navigationBarItems(
+                trailing:
+                    NavigationLink(destination: TripFormPage(trip: trip)) {
+                        Text("Edit")
+                    }
+            )
     }
 }
 
 struct TripsDetailPage_Previews: PreviewProvider {
     static var previews: some View {
-        TripsDetailPage(trip: sampleTrips[0])
+        TripsDetailPage(trip: sampleTrips[0], activities: [])
     }
+}
+
+func generateCleanAddress(trip: Trip) -> String {
+    var cleanAddress = ""
+    if (trip.city != "") {
+        cleanAddress += trip.city + ", "
+    }
+    
+    if (trip.state != "") {
+        cleanAddress += trip.state + ", "
+    }
+    
+    if (trip.country != "") {
+        cleanAddress += trip.country + " "
+    }
+    
+    if (trip.postalCode != "") {
+        cleanAddress += trip.postalCode
+    }
+    
+    return cleanAddress
 }

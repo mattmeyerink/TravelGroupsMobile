@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060368A626C9943D001EC316 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060368A526C9943D001EC316 /* Activity.swift */; };
 		0616107326B3BAA000988C7D /* TripsDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0616107226B3BAA000988C7D /* TripsDetailPage.swift */; };
 		0626B1EB26B6FDE80092B292 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0626B1EA26B6FDE80092B292 /* MapView.swift */; };
 		063D63C726C4D1CA00810D86 /* TripPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D63C626C4D1CA00810D86 /* TripPin.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		060368A526C9943D001EC316 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		0616107226B3BAA000988C7D /* TripsDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsDetailPage.swift; sourceTree = "<group>"; };
 		0626B1EA26B6FDE80092B292 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		063D63C626C4D1CA00810D86 /* TripPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripPin.swift; path = ../../../../.Trash/TripPin.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				06B7B20B26AA6F4C00EF4CA9 /* Trip.swift */,
 				063D63C626C4D1CA00810D86 /* TripPin.swift */,
 				06B1561026C0C020003131FF /* LocationStructures.swift */,
+				060368A526C9943D001EC316 /* Activity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				060368A626C9943D001EC316 /* Activity.swift in Sources */,
 				065F214E26A7A8B800CC372D /* ExplorePage.swift in Sources */,
 				06B1561526C0CCE0003131FF /* Geocoder.swift in Sources */,
 				0626B1EB26B6FDE80092B292 /* MapView.swift in Sources */,
