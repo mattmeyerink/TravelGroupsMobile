@@ -27,12 +27,26 @@ struct TripsPage: View {
                 }
             }
             
-            Image(favoriteTrip.headerPhoto)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 400, height: 200, alignment: .center)
-                .clipped()
-            
+            NavigationLink (destination: TripsDetailPage(trip: favoriteTrip)) {
+                ZStack (alignment: .bottomLeading){
+                    Image(favoriteTrip.headerPhoto)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 400, height: 200, alignment: .center)
+                        .clipped()
+                    
+                    VStack (alignment: .leading){
+                        Text(favoriteTrip.name)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.white)
+                        Text(favoriteTrip.description)
+                            .fontWeight(.none)
+                            .foregroundColor(Color.white)
+                    }
+                        .padding()
+                }
+            }
+                        
             showPastTrips ? Text("My Past Trips").font(.title) : Text("My Future Trips").font(.title)
         
             if showPastTrips {
