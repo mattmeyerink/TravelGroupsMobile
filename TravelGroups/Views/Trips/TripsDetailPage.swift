@@ -20,11 +20,14 @@ struct TripsDetailPage: View {
                     Text(trip.description)
                         .padding()
                     
-                    Text("Trip Information")
-                        .font(.title)
-                    Text("Start Date: " + trip.startDate)
-                    Text("End Date: " + trip.endDate)
-                    Text("Location: " + generateCleanAddress(trip: trip))
+                    VStack {
+                        Text("Trip Information")
+                            .font(.title)
+                        Text("Start Date: " + trip.startDate)
+                        Text("End Date: " + trip.endDate)
+                        Text("Location: " + generateCleanAddress(trip: trip))
+                    }
+                        .padding()
                     
                     Text("Activities")
                         .font(.title)
@@ -48,7 +51,7 @@ struct TripsDetailPage: View {
 
 struct TripsDetailPage_Previews: PreviewProvider {
     static var previews: some View {
-        TripsDetailPage(trip: sampleTrips[0], activities: [])
+        TripsDetailPage(trip: sampleTrips[0], activities: )
     }
 }
 

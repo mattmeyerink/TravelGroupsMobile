@@ -11,6 +11,7 @@
 import Foundation
 
 var sampleTrips: [Trip] = getSampleTripData()
+var sampleActivities: [Activity] = getSampleActivityData()
 
 func getSampleTripData() -> [Trip] {
     var trips: [Trip] = []
@@ -185,5 +186,41 @@ func getSampleTripData() -> [Trip] {
     trips.append(sampleTrip)
     
     return trips
+}
+
+func getSampleActivityData() -> [Activity] {
+    var activities: [Activity] = []
+    
+    var sampleActivity: Activity = Activity(
+        id: 1,
+        name: "Universal Studios",
+        description: "A theme park with fantastic attractions such as HARRY POTTER WORLD!",
+        street: "6000 Universal Blvd",
+        city: "Orlando",
+        state: "FL",
+        country: "US",
+        postalCode: "32819",
+        date: "8/21/21",
+        price: 0,
+        url: "https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/directions-and-parking"
+    )
+    activities.append(sampleActivity)
+    
+    sampleActivity = Activity(
+        id: 2,
+        name: "Solstice Canyon Hike",
+        description: "A beautiful loop hike in Malibu.",
+        street: "3455 Solstice Canyon Rd",
+        city: "Malibu",
+        state: "CA",
+        country: "US",
+        postalCode: "90265",
+        date: "8/21/21",
+        price: 0,
+        url: "https://www.nps.gov/samo/planyourvisit/solsticecanyon.htm"
+    )
+    activities.append(sampleActivity)
+    
+    return activities
 }
 

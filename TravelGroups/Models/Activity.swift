@@ -15,6 +15,7 @@ struct Activity: Identifiable, Hashable, Codable {
     var name: String
     var description: String
     
+    var street: String
     var city: String
     var state: String
     var country: String
@@ -23,4 +24,6 @@ struct Activity: Identifiable, Hashable, Codable {
     var date: String
     
     var price: Double
+    
+    var url: String
 }
