@@ -11,11 +11,22 @@ import SwiftUI
 
 struct TripsPage: View {
     @State private var showPastTrips: Bool = false
+    @State private var tripToggleMessage: String = "Future Trips"
     
     var pastTrips: [Trip] = Array(sampleTrips[...4])
     var futureTrips: [Trip] = Array(sampleTrips[5...])
     
     var favoriteTrip: Trip = getFavoriteTrip(trips: sampleTrips)
+    
+    // Toggles the list being displayed between past and future
+    func toggleTripListView() -> Void {
+        showPastTrips = !showPastTrips
+        if (showPastTrips) {
+            tripToggleMessage = "Future Trips"
+        } else {
+            tripToggleMessage = "Past Trips"
+        }
+    }
     
     var body: some View {
         ScrollView {
@@ -35,26 +46,31 @@ struct TripsPage: View {
                             Text(favoriteTrip.description)
                                 .fontWeight(.none)
                                 .foregroundColor(Color.white)
+                            }
+                                .padding()
                         }
-                            .padding()
                     }
-                }
                             
-                showPastTrips ? Text("My Past Trips").font(.title) : Text("My Future Trips").font(.title)
-            
+                showPastTrips ?
+                    Text("Past Trips")
+                        .font(.title)
+                    :
+                    Text("Future Trips")
+                        .font(.title)
+                
                 if showPastTrips {
                     TripsList(trips: pastTrips)
                 } else {
-                    TripsList(trips: futureTrips)
-                }
+                    TripsList(trips: futureTrips)                }
             }
         }
         .navigationBarTitle("My Trips")
-        .navigationBarItems(trailing:
-                                NavigationLink (destination: TripFormPage(trip: generateBlankTrip())) {
-                                    Image(systemName: "plus")
-                                }
-        )
+        .navigationBarItems(
+            leading: Button(tripToggleMessage) {toggleTripListView()},
+                            
+            trailing:  NavigationLink (destination: TripFormPage(trip: generateBlankTrip())) {
+            Image(systemName: "plus")
+        })
     }
 }
 
