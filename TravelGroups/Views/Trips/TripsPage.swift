@@ -31,7 +31,7 @@ struct TripsPage: View {
     var body: some View {
         ScrollView {
             VStack {
-                NavigationLink (destination: TripsDetailPage(trip: favoriteTrip)) {
+                NavigationLink (destination: TripsDetailPage(trip: favoriteTrip, activities: sampleActivities)) {
                     ZStack (alignment: .bottomLeading){
                         Image(favoriteTrip.headerPhoto)
                             .resizable()

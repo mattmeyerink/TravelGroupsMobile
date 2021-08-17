@@ -22,6 +22,8 @@
 		06B7B20426AA6CDB00EF4CA9 /* TripsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7B20326AA6CDB00EF4CA9 /* TripsList.swift */; };
 		06B7B20A26AA6E1C00EF4CA9 /* TripRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7B20926AA6E1C00EF4CA9 /* TripRow.swift */; };
 		06B7B20C26AA6F4C00EF4CA9 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7B20B26AA6F4C00EF4CA9 /* Trip.swift */; };
+		06CEC70E26CB57FB0045346C /* ActivitiesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEC70D26CB57FB0045346C /* ActivitiesList.swift */; };
+		06CEC71026CB584B0045346C /* ActivityRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CEC70F26CB584B0045346C /* ActivityRow.swift */; };
 		06D098D0269146DF006A3559 /* TravelGroupsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D098CF269146DF006A3559 /* TravelGroupsApp.swift */; };
 		06D098D4269146E2006A3559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D098D3269146E2006A3559 /* Assets.xcassets */; };
 		06D098D7269146E2006A3559 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D098D6269146E2006A3559 /* Preview Assets.xcassets */; };
@@ -63,6 +65,8 @@
 		06B7B20326AA6CDB00EF4CA9 /* TripsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsList.swift; sourceTree = "<group>"; };
 		06B7B20926AA6E1C00EF4CA9 /* TripRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRow.swift; sourceTree = "<group>"; usesTabs = 0; };
 		06B7B20B26AA6F4C00EF4CA9 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		06CEC70D26CB57FB0045346C /* ActivitiesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesList.swift; sourceTree = "<group>"; };
+		06CEC70F26CB584B0045346C /* ActivityRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRow.swift; sourceTree = "<group>"; };
 		06D098CC269146DF006A3559 /* TravelGroups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGroups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D098CF269146DF006A3559 /* TravelGroupsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelGroupsApp.swift; sourceTree = "<group>"; };
 		06D098D3269146E2006A3559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		06B7B20526AA6CEC00EF4CA9 /* Trips */ = {
 			isa = PBXGroup;
 			children = (
+				06CEC71126CB5B5E0045346C /* Activities */,
 				065F214B26A7A85900CC372D /* TripsPage.swift */,
 				06B7B20326AA6CDB00EF4CA9 /* TripsList.swift */,
 				06B7B20926AA6E1C00EF4CA9 /* TripRow.swift */,
@@ -175,6 +180,15 @@
 				060368A526C9943D001EC316 /* Activity.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		06CEC71126CB5B5E0045346C /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				06CEC70F26CB584B0045346C /* ActivityRow.swift */,
+				06CEC70D26CB57FB0045346C /* ActivitiesList.swift */,
+			);
+			path = Activities;
 			sourceTree = "<group>";
 		};
 		06D098C3269146DF006A3559 = {
@@ -368,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06CEC71026CB584B0045346C /* ActivityRow.swift in Sources */,
 				060368A626C9943D001EC316 /* Activity.swift in Sources */,
 				065F214E26A7A8B800CC372D /* ExplorePage.swift in Sources */,
 				06B1561526C0CCE0003131FF /* Geocoder.swift in Sources */,
@@ -382,6 +397,7 @@
 				06B7B20A26AA6E1C00EF4CA9 /* TripRow.swift in Sources */,
 				06B1561126C0C020003131FF /* LocationStructures.swift in Sources */,
 				0616107326B3BAA000988C7D /* TripsDetailPage.swift in Sources */,
+				06CEC70E26CB57FB0045346C /* ActivitiesList.swift in Sources */,
 				06A40A8026AB7BAA00115DF2 /* LoadSampleData.swift in Sources */,
 				063D63C726C4D1CA00810D86 /* TripPin.swift in Sources */,
 				06D7B70326BDF0D000F5980E /* TripFormPage.swift in Sources */,

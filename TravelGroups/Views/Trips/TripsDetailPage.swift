@@ -29,8 +29,11 @@ struct TripsDetailPage: View {
                     }
                         .padding()
                     
-                    Text("Activities")
-                        .font(.title)
+                    VStack {
+                        Text("Activities")
+                            .font(.title)
+                        ActivitiesList(activities: activities)
+                    }
                     
                     Text("Photos")
                         .font(.title)
@@ -51,7 +54,7 @@ struct TripsDetailPage: View {
 
 struct TripsDetailPage_Previews: PreviewProvider {
     static var previews: some View {
-        TripsDetailPage(trip: sampleTrips[0], activities: )
+        TripsDetailPage(trip: sampleTrips[0], activities: sampleActivities)
     }
 }
 
