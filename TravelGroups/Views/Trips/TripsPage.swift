@@ -11,7 +11,7 @@ import SwiftUI
 
 struct TripsPage: View {
     @State private var showPastTrips: Bool = false
-    @State private var tripToggleMessage: String = "Future Trips"
+    @State private var tripToggleMessage: String = "Past Trips"
     
     var pastTrips: [Trip] = Array(sampleTrips[...4])
     var futureTrips: [Trip] = Array(sampleTrips[5...])

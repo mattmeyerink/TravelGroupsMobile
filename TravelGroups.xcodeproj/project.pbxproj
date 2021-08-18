@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0601F23F26CC93B700CAFA53 /* ActivityDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0601F23E26CC93B700CAFA53 /* ActivityDetailPage.swift */; };
 		060368A626C9943D001EC316 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060368A526C9943D001EC316 /* Activity.swift */; };
 		0616107326B3BAA000988C7D /* TripsDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0616107226B3BAA000988C7D /* TripsDetailPage.swift */; };
 		0626B1EB26B6FDE80092B292 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0626B1EA26B6FDE80092B292 /* MapView.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0601F23E26CC93B700CAFA53 /* ActivityDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailPage.swift; sourceTree = "<group>"; };
 		060368A526C9943D001EC316 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		0616107226B3BAA000988C7D /* TripsDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsDetailPage.swift; sourceTree = "<group>"; };
 		0626B1EA26B6FDE80092B292 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			children = (
 				06CEC70F26CB584B0045346C /* ActivityRow.swift */,
 				06CEC70D26CB57FB0045346C /* ActivitiesList.swift */,
+				0601F23E26CC93B700CAFA53 /* ActivityDetailPage.swift */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0601F23F26CC93B700CAFA53 /* ActivityDetailPage.swift in Sources */,
 				06CEC71026CB584B0045346C /* ActivityRow.swift in Sources */,
 				060368A626C9943D001EC316 /* Activity.swift in Sources */,
 				065F214E26A7A8B800CC372D /* ExplorePage.swift in Sources */,

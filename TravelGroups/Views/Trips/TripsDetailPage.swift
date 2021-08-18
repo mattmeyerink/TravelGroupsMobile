@@ -17,28 +17,23 @@ struct TripsDetailPage: View {
         ScrollView {
             HStack {
                 VStack (alignment: .leading) {
+                    Text("Trip Information")
+                        .font(.title)
+                        .padding()
                     Text(trip.description)
-                        .padding()
+                    Text("Start Date: " + trip.startDate)
+                    Text("End Date: " + trip.endDate)
+                    Text("Location: " + generateCleanAddress(trip: trip))
                     
-                    VStack {
-                        Text("Trip Information")
-                            .font(.title)
-                        Text("Start Date: " + trip.startDate)
-                        Text("End Date: " + trip.endDate)
-                        Text("Location: " + generateCleanAddress(trip: trip))
-                    }
+                    Text("Activities")
+                        .font(.title)
                         .padding()
-                    
-                    VStack {
-                        Text("Activities")
-                            .font(.title)
-                        ActivitiesList(activities: activities)
-                    }
+                    ActivitiesList(activities: activities)
                     
                     Text("Photos")
                         .font(.title)
+                        .padding()
                 }
-                    .padding()
                 Spacer()
             }
         }
