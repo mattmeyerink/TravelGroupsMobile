@@ -14,7 +14,7 @@ struct TripsList: View {
     
     var body: some View {
         ForEach(trips) { trip in
-            NavigationLink(destination: TripsDetailPage(trip: trip, activities: sampleActivities)) {
+            NavigationLink(destination: TripsDetailPage(trip: trip, activities: sampleActivities, images: sampleTripImages)) {
                 TripRow(trip: trip)
             }
         }

@@ -12,6 +12,7 @@ import SwiftUI
 struct TripsDetailPage: View {
     var trip: Trip
     var activities: [Activity]
+    var images: [TripImage]
     
     var body: some View {
         ScrollView {
@@ -19,20 +20,25 @@ struct TripsDetailPage: View {
                 VStack (alignment: .leading) {
                     Text("Trip Information")
                         .font(.title)
-                        .padding()
+                        .padding(.leading)
                     Text(trip.description)
+                        .padding(.leading)
                     Text("Start Date: " + trip.startDate)
+                        .padding(.leading)
                     Text("End Date: " + trip.endDate)
+                        .padding(.leading)
                     Text("Location: " + generateCleanAddress(trip: trip))
+                        .padding(.leading)
                     
                     Text("Activities")
                         .font(.title)
-                        .padding()
+                        .padding(.leading)
                     ActivitiesList(activities: activities)
                     
                     Text("Photos")
                         .font(.title)
                         .padding()
+                    PhotosGrid(images: images)
                 }
                 Spacer()
             }
@@ -49,7 +55,7 @@ struct TripsDetailPage: View {
 
 struct TripsDetailPage_Previews: PreviewProvider {
     static var previews: some View {
-        TripsDetailPage(trip: sampleTrips[0], activities: sampleActivities)
+        TripsDetailPage(trip: sampleTrips[0], activities: sampleActivities, images: sampleTripImages)
     }
 }
 

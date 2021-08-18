@@ -12,6 +12,7 @@ import Foundation
 
 var sampleTrips: [Trip] = getSampleTripData()
 var sampleActivities: [Activity] = getSampleActivityData()
+var sampleTripImages: [TripImage] = getSampleTripImageData()
 
 func getSampleTripData() -> [Trip] {
     var trips: [Trip] = []
@@ -224,3 +225,29 @@ func getSampleActivityData() -> [Activity] {
     return activities
 }
 
+func getSampleTripImageData() -> [TripImage] {
+    var tripImages: [TripImage] = []
+    
+    var sampleTripImage: TripImage = TripImage(id: 1, name: "Ann Arbor", url: "AnnArbor")
+    tripImages.append(sampleTripImage)
+    
+    sampleTripImage = TripImage(id: 2, name: "DC Monument", url: "DCMonument")
+    tripImages.append(sampleTripImage)
+    
+    sampleTripImage = TripImage(id: 3, name: "Erika up North", url: "ErikaUpNorth")
+    tripImages.append(sampleTripImage)
+    
+    sampleTripImage = TripImage(id: 4, name: "Jason and Me", url: "JasonAndMe")
+    tripImages.append(sampleTripImage)
+    
+    sampleTripImage = TripImage(id: 5, name: "Malibu Hike", url: "MalibuHike")
+    tripImages.append(sampleTripImage)
+    
+    sampleTripImage = TripImage(id: 6, name: "Paddleboarding", url: "Paddleboarding")
+    tripImages.append(sampleTripImage)
+    
+    sampleTripImage = TripImage(id: 7, name: "Pawnee, Indiana City Hall", url: "Pawnee")
+    tripImages.append(sampleTripImage)
+    
+    return tripImages
+}
