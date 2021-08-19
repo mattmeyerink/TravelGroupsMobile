@@ -19,7 +19,7 @@ struct ActivityDetailPage: View {
                 .font(.title)
         }
             .navigationBarTitle(activity.name)
-            .navigationBarItems(trailing: Text("Edit"))
+        .navigationBarItems(trailing: NavigationLink(destination: ActivityFormPage()) {Text("Edit")})
         
     }
 }

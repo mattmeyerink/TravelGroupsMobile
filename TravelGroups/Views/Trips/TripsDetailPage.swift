@@ -30,9 +30,17 @@ struct TripsDetailPage: View {
                     Text("Location: " + generateCleanAddress(trip: trip))
                         .padding(.leading)
                     
-                    Text("Activities")
-                        .font(.title)
-                        .padding(.leading)
+                    HStack {
+                        Text("Activities")
+                            .font(.title)
+                            .padding(.leading)
+                        Spacer()
+                        NavigationLink(destination: ActivityFormPage()) {
+                            Image(systemName: "plus")
+                        }
+                            .padding(.trailing)
+                    }
+                    
                     ActivitiesList(activities: activities)
                     
                     Text("Photos")
