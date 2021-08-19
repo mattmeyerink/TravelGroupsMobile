@@ -12,14 +12,30 @@ import SwiftUI
 struct TripFormPage: View {
     var trip: Trip
     
+    @State var formTripName: String = ""
+    @State var formTripDescription: String = ""
+    
+    @State var formTripCity: String = ""
+    @State var formTripState: String = ""
+    @State var formTripPostalCode: String = ""
+    @State var formTripCountry: String = ""
+    
+    
     var body: some View {
-        trip.name == "" ?
-        Text("Add New Trip")
-            .font(.largeTitle)
-            .padding() :
-        Text("Edit Trip")
-            .font(.largeTitle)
-            .padding()
+        Form {
+            Section(header: Text("NAME")) {
+                TextField("Name", text: $formTripName)
+                TextField("Description", text: $formTripDescription)
+            }
+            
+            Section(header: Text("ADDRESS")) {
+                TextField("City", text: $formTripCity)
+                TextField("State", text: $formTripState)
+                TextField("Postal Code", text: $formTripPostalCode)
+                TextField("Country", text: $formTripCountry)
+            }
+        }
+            .navigationBarTitle(trip.name == "" ? "Add New Trip" : "Edit " + trip.name)
     }
 }
 
