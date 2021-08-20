@@ -20,6 +20,8 @@ struct TripFormPage: View {
     @State var formTripPostalCode: String = ""
     @State var formTripCountry: String = ""
     
+    @State var tripAdded: Bool = false
+    
     
     var body: some View {
         Form {
@@ -34,6 +36,17 @@ struct TripFormPage: View {
                 TextField("Postal Code", text: $formTripPostalCode)
                 TextField("Country", text: $formTripCountry)
             }
+            
+            Button(
+                action: {self.tripAdded = true},
+                label: {
+                    HStack {
+                        Spacer()
+                        Text("Save Trip")
+                        Spacer()
+                        
+                    }
+                })
         }
             .navigationBarTitle(trip.name == "" ? "Add New Trip" : "Edit " + trip.name)
     }
