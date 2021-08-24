@@ -16,10 +16,15 @@ struct Activity: Identifiable, Hashable, Codable {
     var description: String
     
     var address: Address
+    var geocode: Geocode?
     
     var date: String
     
     var price: Double
     
     var url: String
+    
+    mutating func setGeocode(geocode: Geocode) -> Void {
+        self.geocode = geocode
+    }
 }

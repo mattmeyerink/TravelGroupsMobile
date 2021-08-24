@@ -171,6 +171,8 @@ func getSampleActivityData() -> [Activity] {
         price: 0,
         url: "https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/directions-and-parking"
     )
+    var sampleGeocode: Geocode = Geocode(latitude: 28.538336, longitude: -81.379234)
+    sampleActivity.setGeocode(geocode: sampleGeocode)
     activities.append(sampleActivity)
     
     sampleActivity = Activity(
@@ -182,6 +184,8 @@ func getSampleActivityData() -> [Activity] {
         price: 0,
         url: "https://www.nps.gov/samo/planyourvisit/solsticecanyon.htm"
     )
+    sampleGeocode = Geocode(latitude: 34.0259, longitude: -118.7798)
+    sampleActivity.setGeocode(geocode: sampleGeocode)
     activities.append(sampleActivity)
     
     return activities
