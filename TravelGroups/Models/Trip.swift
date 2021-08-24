@@ -14,10 +14,7 @@ struct Trip: Identifiable, Hashable, Codable {
     var id: Int
     var name: String
     
-    var city: String
-    var state: String
-    var country: String
-    var postalCode: String
+    var address: Address
     
     var description: String
     

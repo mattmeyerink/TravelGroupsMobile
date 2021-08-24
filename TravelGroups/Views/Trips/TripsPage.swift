@@ -85,10 +85,7 @@ func generateBlankTrip() -> Trip {
     return Trip(
         id: -1,
         name: "",
-        city: "",
-        state: "",
-        country: "",
-        postalCode: "",
+        address: Address(street: "", city: "", state: "", country: "", postalCode: ""),
         description: "",
         startDate: "",
         endDate: "",

@@ -15,11 +15,18 @@ struct ActivityDetailPage: View {
     
     var body: some View {
         ScrollView {
-            Text(activity.name)
-                .font(.title)
+            HStack {
+                VStack (alignment: .leading) {
+                    Text("Activity Information")
+                        .font(.title)
+                    Text(activity.description)
+                    Text("Activity Date: " + activity.date)
+                }
+                Spacer()
+            }
         }
             .navigationBarTitle(activity.name)
-        .navigationBarItems(trailing: NavigationLink(destination: ActivityFormPage()) {Text("Edit")})
+            .navigationBarItems(trailing: NavigationLink(destination: ActivityFormPage()) {Text("Edit")})
         
     }
 }

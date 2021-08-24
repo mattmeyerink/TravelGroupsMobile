@@ -15,11 +15,7 @@ struct Activity: Identifiable, Hashable, Codable {
     var name: String
     var description: String
     
-    var street: String
-    var city: String
-    var state: String
-    var country: String
-    var postalCode: String
+    var address: Address
     
     var date: String
     

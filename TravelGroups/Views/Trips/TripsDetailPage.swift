@@ -27,7 +27,7 @@ struct TripsDetailPage: View {
                         .padding(.leading)
                     Text("End Date: " + trip.endDate)
                         .padding(.leading)
-                    Text("Location: " + generateCleanAddress(trip: trip))
+                    Text("Location: " + generateCleanAddress(address: trip.address))
                         .padding(.leading)
                     
                     HStack {
@@ -67,22 +67,26 @@ struct TripsDetailPage_Previews: PreviewProvider {
     }
 }
 
-func generateCleanAddress(trip: Trip) -> String {
+func generateCleanAddress(address: Address) -> String {
     var cleanAddress = ""
-    if (trip.city != "") {
-        cleanAddress += trip.city + ", "
+    if (address.street != "") {
+        cleanAddress += address.street! + ", "
     }
     
-    if (trip.state != "") {
-        cleanAddress += trip.state + ", "
+    if (address.city != "") {
+        cleanAddress += address.city + ", "
     }
     
-    if (trip.country != "") {
-        cleanAddress += trip.country + " "
+    if (address.state != "") {
+        cleanAddress += address.state + ", "
     }
     
-    if (trip.postalCode != "") {
-        cleanAddress += trip.postalCode
+    if (address.country != "") {
+        cleanAddress += address.country + " "
+    }
+    
+    if (address.postalCode != "") {
+        cleanAddress += address.postalCode
     }
     
     return cleanAddress
