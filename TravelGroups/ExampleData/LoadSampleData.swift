@@ -19,7 +19,7 @@ func getSampleTripData() -> [Trip] {
     var sampleTrip: Trip = Trip(
         id: 1,
         name: "Summer 2021 CA Trip",
-        address: Address(street: nil, city: "Hermosa Beach", state: "CA", country: "US", postalCode: "90254"),
+        address: Address(street: "", city: "Hermosa Beach", state: "CA", country: "US", postalCode: "90254"),
         description: "Trip to see Erika!",
         startDate: "07/13/2021",
         endDate: "08/06/2021",
@@ -33,7 +33,7 @@ func getSampleTripData() -> [Trip] {
     sampleTrip = Trip(
         id: 2,
         name: "Summer 2021 TX Trip",
-        address: Address(street: nil, city: "Dallas", state: "TX", country: "US", postalCode: "75204"),
+        address: Address(street: "", city: "Dallas", state: "TX", country: "US", postalCode: "75204"),
         description: "Trip to see Kyle",
         startDate: "07/13/2021",
         endDate: "08/06/2021",
@@ -47,7 +47,7 @@ func getSampleTripData() -> [Trip] {
     sampleTrip = Trip(
         id: 3,
         name: "Summer 2021 FL Trip",
-        address: Address(street: nil, city: "Estero", state: "FL", country: "US", postalCode: "33928"),
+        address: Address(street: "", city: "Estero", state: "FL", country: "US", postalCode: "33928"),
         description: "Golf trip with Jason!",
         startDate: "07/13/2021",
         endDate: "08/06/2021",
@@ -61,7 +61,7 @@ func getSampleTripData() -> [Trip] {
     sampleTrip = Trip(
         id: 4,
         name: "Sleeping Bear Trip 2021 Round One",
-        address: Address(street: nil, city: "Glen Arbor", state: "MI", country: "US", postalCode: "49636"),
+        address: Address(street: "", city: "Glen Arbor", state: "MI", country: "US", postalCode: "49636"),
         description: "First trip to sleeping bear with Erika!",
         startDate: "07/13/2021",
         endDate: "08/06/2021",
@@ -75,7 +75,7 @@ func getSampleTripData() -> [Trip] {
     sampleTrip = Trip(
         id: 5,
         name: "Sleeping Bear Trip 2021 Round Two",
-        address: Address(street: nil, city: "Glen Arbor", state: "MI", country: "US", postalCode: "49636"),
+        address: Address(street: "", city: "Glen Arbor", state: "MI", country: "US", postalCode: "49636"),
         description: "Second trip to sleeping bear dunes with Mom!",
         startDate: "07/13/2021",
         endDate: "08/06/2021",
@@ -89,7 +89,7 @@ func getSampleTripData() -> [Trip] {
     sampleTrip = Trip(
         id: 6,
         name: "Harry Potter World",
-        address: Address(street: nil, city: "Orlando", state: "FL", country: "US", postalCode: "90254"),
+        address: Address(street: "", city: "Orlando", state: "FL", country: "US", postalCode: "90254"),
         description: "Trip to Harry Potter World!",
         startDate: "07/13/2021",
         endDate: "08/06/2021",
@@ -103,7 +103,7 @@ func getSampleTripData() -> [Trip] {
     sampleTrip = Trip(
         id: 7,
         name: "London Trip",
-        address: Address(street: nil, city: "London", state: "", country: "UK", postalCode: ""),
+        address: Address(street: "", city: "London", state: "", country: "UK", postalCode: ""),
         description: "Seeing the sights in London",
         startDate: "07/13/2021",
         endDate: "08/06/2021",
@@ -117,7 +117,7 @@ func getSampleTripData() -> [Trip] {
     sampleTrip = Trip(
         id: 8,
         name: "Big Sur",
-        address: Address(street: nil, city: "Big Sur", state: "CA", country: "US", postalCode: "33928"),
+        address: Address(street: "", city: "Big Sur", state: "CA", country: "US", postalCode: "33928"),
         description: "Hiking in Big Sur",
         startDate: "07/13/2021",
         endDate: "08/06/2021",
@@ -131,7 +131,7 @@ func getSampleTripData() -> [Trip] {
     sampleTrip = Trip(
         id: 9,
         name: "Sleeping Bear Trip Again",
-        address: Address(street: nil, city: "Glen Arbor", state: "MI", country: "US", postalCode: "49636"),
+        address: Address(street: "", city: "Glen Arbor", state: "MI", country: "US", postalCode: "49636"),
         description: "Going back because this place is awesome!",
         startDate: "07/13/2021",
         endDate: "08/06/2021",
@@ -145,7 +145,7 @@ func getSampleTripData() -> [Trip] {
     sampleTrip = Trip(
         id: 10,
         name: "Hilton Head Trip",
-        address: Address(street: nil, city: "Hilton Head", state: "SC", country: "US", postalCode: ""),
+        address: Address(street: "", city: "Hilton Head", state: "SC", country: "US", postalCode: ""),
         description: "Trip with the family!",
         startDate: "07/13/2021",
         endDate: "08/06/2021",
