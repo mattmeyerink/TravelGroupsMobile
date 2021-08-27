@@ -19,7 +19,12 @@ struct MapView: UIViewRepresentable {
     }
     
     func updateUIView(_ view: MKMapView, context: UIViewRepresentableContext<MapView>) {
+        view.delegate = context.coordinator
         view.addAnnotations(pins)
+    }
+    
+    func makeCoordinator() -> MapViewCoordinator {
+        MapViewCoordinator(self)
     }
 }
 
