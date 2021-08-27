@@ -15,7 +15,7 @@ struct ActivitiesList: View {
     
     var body: some View {
         ForEach(activities) { activity in
-            NavigationLink(destination: ActivityDetailPage(activity: activity)) {
+            NavigationLink(destination: ActivityDetailPage(activity: activity, images: sampleTripImages)) {
                 ActivityRow(activity: activity)
             }
         }

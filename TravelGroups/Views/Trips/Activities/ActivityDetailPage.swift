@@ -13,6 +13,7 @@ import MapKit
 
 struct ActivityDetailPage: View {
     var activity: Activity
+    var images: [TripImage]
     
     var body: some View {
         ScrollView {
@@ -31,15 +32,15 @@ struct ActivityDetailPage: View {
                 }
                 ActivitiesMapView()
                     .frame(height: 300)
-                HStack{
-                    VStack (alignment: .leading){
+                VStack {
+                    HStack {
                         Text("Photos")
                             .font(.title)
-                        
+                        Spacer()
                     }
-                        .padding()
-                    Spacer()
+                    PhotosGrid(images: images)
                 }
+                    .padding()
             }
         }
             .navigationBarTitle(activity.name)
@@ -49,6 +50,6 @@ struct ActivityDetailPage: View {
 
 struct ActivityDetailPage_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityDetailPage(activity: sampleActivities[0])
+        ActivityDetailPage(activity: sampleActivities[0], images: sampleTripImages)
     }
 }
