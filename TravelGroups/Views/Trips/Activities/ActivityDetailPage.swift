@@ -16,18 +16,31 @@ struct ActivityDetailPage: View {
     
     var body: some View {
         ScrollView {
-            HStack {
-                VStack (alignment: .leading) {
-                    Text("Activity Information")
-                        .font(.title)
-                    Text(activity.description)
-                    Text("Activity Date: " + activity.date)
-                    Text("Location: " + generateCleanAddress(address: activity.address))
+            VStack {
+                HStack {
+                    VStack (alignment: .leading) {
+                        Text("Activity Information")
+                            .font(.title)
+                        Text(activity.description)
+                        Text("Activity Date: " + activity.date)
+                        Text("Location: " + generateCleanAddress(address: activity.address))
+                        Link(activity.url, destination: URL(string: activity.url)!)
+                    }
+                        .padding()
+                    Spacer()
                 }
-                    .padding()
-                Spacer()
+                ActivitiesMapView()
+                    .frame(height: 300)
+                HStack{
+                    VStack (alignment: .leading){
+                        Text("Photos")
+                            .font(.title)
+                        
+                    }
+                        .padding()
+                    Spacer()
+                }
             }
-            ActivitiesMapView(region: createRegionForMap(geocode: activity.geocode!))
         }
             .navigationBarTitle(activity.name)
             .navigationBarItems(trailing: NavigationLink(destination: ActivityFormPage()) {Text("Edit")})
@@ -38,8 +51,4 @@ struct ActivityDetailPage_Previews: PreviewProvider {
     static var previews: some View {
         ActivityDetailPage(activity: sampleActivities[0])
     }
-}
-
-func createRegionForMap(geocode: Geocode) -> MKCoordinateRegion {
-    return MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: geocode.latitude, longitude: geocode.longitude), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
 }
