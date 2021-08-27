@@ -16,39 +16,41 @@ struct TripsDetailPage: View {
     
     var body: some View {
         ScrollView {
-            HStack {
-                VStack (alignment: .leading) {
-                    Text("Trip Information")
-                        .font(.title)
-                        .padding(.leading)
-                    Text(trip.description)
-                        .padding(.leading)
-                    Text("Start Date: " + trip.startDate)
-                        .padding(.leading)
-                    Text("End Date: " + trip.endDate)
-                        .padding(.leading)
-                    Text("Location: " + generateCleanAddress(address: trip.address))
-                        .padding(.leading)
-                    
-                    HStack {
-                        Text("Activities")
+            VStack {
+                HStack {
+                    VStack (alignment: .leading) {
+                        Text("Trip Information")
                             .font(.title)
-                            .padding(.leading)
-                        Spacer()
-                        NavigationLink(destination: ActivityFormPage()) {
-                            Image(systemName: "plus")
-                        }
-                            .padding(.trailing)
+                        Text(trip.description)
+                        Text("Start Date: " + trip.startDate)
+                        Text("End Date: " + trip.endDate)
+                        Text("Location: " + generateCleanAddress(address: trip.address))
                     }
-                    
-                    ActivitiesList(activities: activities)
-                    
-                    Text("Photos")
-                        .font(.title)
                         .padding()
+                    Spacer()
+                }
+            
+                HStack {
+                    Text("Activities")
+                        .font(.title)
+                        .padding(.leading)
+                    Spacer()
+                    NavigationLink(destination: ActivityFormPage()) {
+                        Image(systemName: "plus")
+                    }
+                        .padding(.trailing)
+                }
+                
+                ActivitiesList(activities: activities)
+                VStack {
+                    HStack {
+                        Text("Photos")
+                            .font(.title)
+                        Spacer()
+                    }
                     PhotosGrid(images: images)
                 }
-                Spacer()
+                    .padding()
             }
         }
             .navigationBarTitle(trip.name)

@@ -19,7 +19,7 @@ struct PhotosGrid: View {
                 Image(image.url)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 125, height: 125)
+                    .frame(width: 115, height: 115)
                     .clipped()
             }
         }
