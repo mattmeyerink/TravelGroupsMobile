@@ -2,6 +2,8 @@
 //  MapViewController.swift
 //  TravelGroups
 //
+//  Controls the map view. Contains logic for detail view for trip pins
+//
 //  Created by Matthew Meyerink on 8/26/21.
 //
 
@@ -16,8 +18,25 @@ class MapViewCoordinator: NSObject, MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customView")
-        annotationView.canShowCallout = true
-        return annotationView
+        guard let annotation = annotation as? TripPin else {
+            return nil
+        }
+        
+        let identifier = "trip"
+        var view: MKAnnotationView
+        
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(
+            withIdentifier: identifier) as? MKMarkerAnnotationView {
+            dequeuedView.annotation = annotation
+            view = dequeuedView
+        } else {
+            view = MKMarkerAnnotationView(
+            annotation: annotation, reuseIdentifier: identifier)
+            view.canShowCallout = true
+            view.calloutOffset = CGPoint(x: -5, y: 5)
+            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        }
+        
+        return view
     }
 }

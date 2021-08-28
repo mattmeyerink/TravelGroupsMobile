@@ -16,8 +16,10 @@ struct MapPage: View {
     var trips: [Trip] = sampleTrips
     
     var body: some View {
-        MapView(pins: generatePinsFromTrips(trips: trips))
-            .edgesIgnoringSafeArea(.all)
+        NavigationView {
+            MapView(pins: generatePinsFromTrips(trips: trips))
+                .edgesIgnoringSafeArea(.all)
+        }
     }
 }
 
