@@ -48,8 +48,8 @@ struct TripsPage: View {
                                 .foregroundColor(Color.white)
                             }
                                 .padding()
-                        }
                     }
+                }
                             
                 showPastTrips ?
                     Text("Past Trips")
@@ -60,8 +60,11 @@ struct TripsPage: View {
                 
                 if showPastTrips {
                     TripsList(trips: pastTrips)
+                        .padding(.horizontal)
                 } else {
-                    TripsList(trips: futureTrips)                }
+                    TripsList(trips: futureTrips)
+                        .padding(.horizontal)
+                }
             }
         }
         .navigationBarTitle("My Trips")

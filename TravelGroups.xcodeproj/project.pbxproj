@@ -123,7 +123,6 @@
 		06B7B20526AA6CEC00EF4CA9 /* Trips */ = {
 			isa = PBXGroup;
 			children = (
-				06CEC71126CB5B5E0045346C /* Activities */,
 				065F214B26A7A85900CC372D /* TripsPage.swift */,
 				06B7B20326AA6CDB00EF4CA9 /* TripsList.swift */,
 				06B7B20926AA6E1C00EF4CA9 /* TripRow.swift */,
@@ -170,6 +169,7 @@
 		06B8B91E26994C7000731903 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				06CEC71126CB5B5E0045346C /* Activities */,
 				06B7B20826AA6D3400EF4CA9 /* Profile */,
 				06B7B20726AA6D2300EF4CA9 /* Explore */,
 				06B7B20626AA6D0500EF4CA9 /* Map */,

@@ -42,6 +42,8 @@ struct TripsDetailPage: View {
                 }
                 
                 ActivitiesList(activities: activities)
+                    .padding(.horizontal)
+                
                 VStack {
                     HStack {
                         Text("Photos")

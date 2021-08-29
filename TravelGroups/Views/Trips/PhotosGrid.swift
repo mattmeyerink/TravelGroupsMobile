@@ -8,7 +8,6 @@
 //
 
 import SwiftUI
-
 struct PhotosGrid: View {
     var images: [TripImage]
     var gridItemLayout = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]

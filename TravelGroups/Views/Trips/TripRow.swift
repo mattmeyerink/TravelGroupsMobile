@@ -24,7 +24,10 @@ struct TripRow: View {
                 .foregroundColor(.black)
         }
             .padding()
-            .border(Color.gray)
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.black)
+        )
     }
 }
 
