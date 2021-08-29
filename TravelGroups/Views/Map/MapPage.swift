@@ -13,11 +13,11 @@ import CoreLocation
 import MapKit
 
 struct MapPage: View {
-    var trips: [Trip] = sampleTrips
+    @ObservedObject var tripsStore: TripsStore
     
     var body: some View {
         NavigationView {
-            MapView(pins: generatePinsFromTrips(trips: trips))
+            MapView(pins: generatePinsFromTrips(trips: tripsStore.trips))
                 .edgesIgnoringSafeArea(.all)
         }
     }
@@ -25,7 +25,7 @@ struct MapPage: View {
 
 struct MapPage_Previews: PreviewProvider {
     static var previews: some View {
-        MapPage()
+        MapPage(tripsStore: TripsStore(trips: sampleTrips))
     }
 }
 

@@ -29,7 +29,7 @@ struct ContentView: View {
                 .tag(Tab.trips)
             
             NavigationView {
-                MapPage()
+                MapPage(tripsStore: tripsStore)
             }
                 .tabItem{
                     Label("Map", systemImage: "globe")
