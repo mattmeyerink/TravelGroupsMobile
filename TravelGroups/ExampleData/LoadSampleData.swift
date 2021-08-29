@@ -13,6 +13,7 @@ import Foundation
 var sampleTrips: [Trip] = getSampleTripData()
 var sampleActivities: [Activity] = getSampleActivityData()
 var sampleTripImages: [TripImage] = getSampleTripImageData()
+var sampleUsers: [User] = getSampleUsers()
 
 func getSampleTripData() -> [Trip] {
     var trips: [Trip] = []
@@ -216,4 +217,20 @@ func getSampleTripImageData() -> [TripImage] {
     tripImages.append(sampleTripImage)
     
     return tripImages
+}
+
+func getSampleUsers() -> [User] {
+    var users: [User] = []
+    
+    let sampleUser: User = User(
+        id: 1,
+        firstName: "Matthew",
+        lastName: "Meyerink",
+        email: "meyerink@umich.edu",
+        username: "mattmeyerink",
+        profilePicture: "mattmeyerink"
+    )
+    users.append(sampleUser)
+    
+    return users
 }
