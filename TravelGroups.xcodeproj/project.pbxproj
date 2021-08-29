@@ -19,6 +19,8 @@
 		065F214E26A7A8B800CC372D /* ExplorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214D26A7A8B800CC372D /* ExplorePage.swift */; };
 		065F215026A7A92100CC372D /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214F26A7A92100CC372D /* ProfilePage.swift */; };
 		065F215226A7AFE900CC372D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F215126A7AFE900CC372D /* ContentView.swift */; };
+		069165BB26DB26CE009742CC /* TripsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069165BA26DB26CE009742CC /* TripsStore.swift */; };
+		069165BD26DB27E9009742CC /* ActivitiesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069165BC26DB27E9009742CC /* ActivitiesStore.swift */; };
 		06A40A8026AB7BAA00115DF2 /* LoadSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A40A7F26AB7BAA00115DF2 /* LoadSampleData.swift */; };
 		06B1561126C0C020003131FF /* LocationStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B1561026C0C020003131FF /* LocationStructures.swift */; };
 		06B1561526C0CCE0003131FF /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B1561426C0CCE0003131FF /* Geocoder.swift */; };
@@ -69,6 +71,8 @@
 		065F214D26A7A8B800CC372D /* ExplorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePage.swift; sourceTree = "<group>"; };
 		065F214F26A7A92100CC372D /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		065F215126A7AFE900CC372D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		069165BA26DB26CE009742CC /* TripsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsStore.swift; sourceTree = "<group>"; };
+		069165BC26DB27E9009742CC /* ActivitiesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesStore.swift; sourceTree = "<group>"; };
 		06A40A7F26AB7BAA00115DF2 /* LoadSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSampleData.swift; sourceTree = "<group>"; };
 		06B1561026C0C020003131FF /* LocationStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStructures.swift; sourceTree = "<group>"; };
 		06B1561426C0CCE0003131FF /* Geocoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 				0601F24226CC9DE000CAFA53 /* TripImage.swift */,
 				06CB95BF26CDFC35008E8669 /* TripPin.swift */,
 				06C2621D26D4829500723D98 /* Address.swift */,
+				069165BA26DB26CE009742CC /* TripsStore.swift */,
+				069165BC26DB27E9009742CC /* ActivitiesStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -409,7 +415,9 @@
 				06CEC71026CB584B0045346C /* ActivityRow.swift in Sources */,
 				060368A626C9943D001EC316 /* Activity.swift in Sources */,
 				065F214E26A7A8B800CC372D /* ExplorePage.swift in Sources */,
+				069165BB26DB26CE009742CC /* TripsStore.swift in Sources */,
 				06C2621E26D4829500723D98 /* Address.swift in Sources */,
+				069165BD26DB27E9009742CC /* ActivitiesStore.swift in Sources */,
 				06B1561526C0CCE0003131FF /* Geocoder.swift in Sources */,
 				0626B1EB26B6FDE80092B292 /* MapView.swift in Sources */,
 				06D098D0269146DF006A3559 /* TravelGroupsApp.swift in Sources */,

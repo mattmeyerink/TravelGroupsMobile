@@ -11,9 +11,10 @@ import SwiftUI
 
 @main
 struct TravelGroupsApp: App {
+    @StateObject private var tripsStore = TripsStore(trips: sampleTrips)
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(tripsStore: tripsStore)
         }
     }
 }

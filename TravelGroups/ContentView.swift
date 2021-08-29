@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection: Tab = .trips
+    @ObservedObject var tripsStore: TripsStore
     
     enum Tab {
         case trips
@@ -20,7 +21,7 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $selection) {
             NavigationView {
-                TripsPage()
+                TripsPage(tripsStore: tripsStore)
             }
                 .tabItem{
                     Label("Trips", systemImage: "note.text")
@@ -56,6 +57,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(tripsStore: TripsStore(trips: sampleTrips))
     }
 }

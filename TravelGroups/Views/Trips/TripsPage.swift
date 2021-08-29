@@ -13,10 +13,9 @@ struct TripsPage: View {
     @State private var showPastTrips: Bool = false
     @State private var tripToggleMessage: String = "Past Trips"
     
-    var pastTrips: [Trip] = Array(sampleTrips[...4])
-    var futureTrips: [Trip] = Array(sampleTrips[5...])
+    @ObservedObject var tripsStore: TripsStore
     
-    var favoriteTrip: Trip = getFavoriteTrip(trips: sampleTrips)
+    var futureTrips: [Trip] = Array(sampleTrips[5...])
     
     // Toggles the list being displayed between past and future
     func toggleTripListView() -> Void {
@@ -31,19 +30,19 @@ struct TripsPage: View {
     var body: some View {
         ScrollView {
             VStack {
-                NavigationLink (destination: TripsDetailPage(trip: favoriteTrip, activities: sampleActivities, images: sampleTripImages)) {
+                NavigationLink (destination: TripsDetailPage(trip: getFavoriteTrip(trips: tripsStore.trips), activities: sampleActivities, images: sampleTripImages)) {
                     ZStack (alignment: .bottomLeading){
-                        Image(favoriteTrip.headerPhoto)
+                        Image(getFavoriteTrip(trips: tripsStore.trips).headerPhoto)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 400, height: 200, alignment: .center)
                             .clipped()
                         
                         VStack (alignment: .leading){
-                            Text(favoriteTrip.name)
+                            Text(getFavoriteTrip(trips: tripsStore.trips).name)
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color.white)
-                            Text(favoriteTrip.description)
+                            Text(getFavoriteTrip(trips: tripsStore.trips).description)
                                 .fontWeight(.none)
                                 .foregroundColor(Color.white)
                             }
@@ -59,7 +58,7 @@ struct TripsPage: View {
                         .font(.title)
                 
                 if showPastTrips {
-                    TripsList(trips: pastTrips)
+                    TripsList(trips: tripsStore.trips)
                         .padding(.horizontal)
                 } else {
                     TripsList(trips: futureTrips)
@@ -79,7 +78,7 @@ struct TripsPage: View {
 
 struct TripsPage_Previews: PreviewProvider {
     static var previews: some View {
-        TripsPage()
+        TripsPage(tripsStore: TripsStore(trips: sampleTrips))
     }
 }
 
