@@ -14,6 +14,7 @@ struct TripsPage: View {
     @State private var tripToggleMessage: String = "Past Trips"
     
     @ObservedObject var tripsStore: TripsStore
+    @ObservedObject var activitiesStore: ActivitiesStore
     
     var futureTrips: [Trip] = Array(sampleTrips[5...])
     
@@ -30,7 +31,7 @@ struct TripsPage: View {
     var body: some View {
         ScrollView {
             VStack {
-                NavigationLink (destination: TripsDetailPage(trip: getFavoriteTrip(trips: tripsStore.trips), activities: sampleActivities, images: sampleTripImages)) {
+                NavigationLink (destination: TripsDetailPage(trip: getFavoriteTrip(trips: tripsStore.trips), activities: activitiesStore.activities, images: sampleTripImages)) {
                     ZStack (alignment: .bottomLeading){
                         Image(getFavoriteTrip(trips: tripsStore.trips).headerPhoto)
                             .resizable()
@@ -78,7 +79,7 @@ struct TripsPage: View {
 
 struct TripsPage_Previews: PreviewProvider {
     static var previews: some View {
-        TripsPage(tripsStore: TripsStore(trips: sampleTrips))
+        TripsPage(tripsStore: TripsStore(trips: sampleTrips), activitiesStore: ActivitiesStore())
     }
 }
 

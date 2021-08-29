@@ -13,7 +13,7 @@ import Foundation
 class ActivitiesStore: ObservableObject {
     @Published var activities: [Activity]
     
-    init(activities: [Activity]) {
+    init(activities: [Activity] = []) {
         self.activities = activities
     }
 }
