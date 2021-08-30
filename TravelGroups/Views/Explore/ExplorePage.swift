@@ -30,6 +30,8 @@ struct ExplorePage: View {
                     .padding(.horizontal)
                 Spacer()
             }
+            UserHeadlineList(users: sampleUsers)
+                .padding(.leading)
         }
             .navigationBarTitle("Explore")
     }
