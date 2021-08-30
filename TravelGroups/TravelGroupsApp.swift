@@ -13,9 +13,11 @@ import SwiftUI
 struct TravelGroupsApp: App {
     @StateObject private var tripsStore = TripsStore(trips: sampleTrips)
     @StateObject private var activitiesStore = ActivitiesStore(activities: sampleActivities)
+    @StateObject private var currentUser = CurrentUser(user: sampleUsers[0])
+    
     var body: some Scene {
         WindowGroup {
-            ContentView(tripsStore: tripsStore, activitiesStore: activitiesStore)
+            ContentView(tripsStore: tripsStore, activitiesStore: activitiesStore, currentUser: currentUser)
         }
     }
 }

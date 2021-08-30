@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var selection: Tab = .trips
     @ObservedObject var tripsStore: TripsStore
     @ObservedObject var activitiesStore: ActivitiesStore
+    @ObservedObject var currentUser: CurrentUser
     
     enum Tab {
         case trips
@@ -45,9 +46,7 @@ struct ContentView: View {
                 }
                 .tag(Tab.explore)
             
-            NavigationView {
-                ProfilePage()
-            }
+            ProfilePage(currentUser: currentUser, allMyPhotos: sampleTripImages)
                 .tabItem{
                     Label("Profile", systemImage: "person.circle")
                 }
@@ -58,6 +57,10 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(tripsStore: TripsStore(trips: sampleTrips), activitiesStore: ActivitiesStore())
+        ContentView(
+            tripsStore: TripsStore(trips: sampleTrips),
+            activitiesStore: ActivitiesStore(),
+            currentUser: CurrentUser(user: sampleUsers[0])
+        )
     }
 }
