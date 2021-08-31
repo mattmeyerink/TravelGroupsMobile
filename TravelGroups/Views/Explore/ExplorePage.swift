@@ -21,6 +21,7 @@ struct ExplorePage: View {
             }
             TripHeadlineList(trips: sampleTrips)
                 .padding(.leading)
+                .padding(.bottom)
             
             
             HStack {

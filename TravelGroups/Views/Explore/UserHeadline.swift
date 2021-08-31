@@ -16,10 +16,14 @@ struct UserHeadline: View {
         VStack {
             Image(user.profilePicture)
                 .resizable()
-                .frame(width: 155, height: 155)
                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                .aspectRatio(contentMode: .fill)
+                .frame(height: 155)
+                .shadow(radius: 7)
             Text(user.username)
         }
+        .padding(.horizontal)
     }
 }
 

@@ -18,11 +18,11 @@ struct ProfilePage: View {
             VStack {
                 Image(currentUser.user.profilePicture)
                     .resizable()
-                    .frame(width: 250, height: 250)
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 250)
                     .shadow(radius: 7)
-                    .padding()
                 
                 HStack {
                     Text(currentUser.user.firstName)

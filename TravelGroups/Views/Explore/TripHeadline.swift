@@ -16,9 +16,18 @@ struct TripHeadline: View {
         VStack(alignment: .leading) {
             Image(trip.headerPhoto)
                 .resizable()
+                .aspectRatio(contentMode: .fill)
                 .frame(width: 155, height: 155)
-                .cornerRadius(5)
-            Text(trip.name)
+                .clipped()
+                .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
+                .shadow(radius: 7)
+                .padding(.horizontal)
+                .padding(.top)
+                .padding(.bottom, 10)
+            Text(trip.address.city + ", ")
+                .padding(.leading)
+            Text(trip.address.state)
+                .padding(.leading)
         }
     }
 }
