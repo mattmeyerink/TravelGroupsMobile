@@ -81,7 +81,7 @@ func getSampleTripData() -> [Trip] {
         startDate: "07/13/2021",
         endDate: "08/06/2021",
         isFavoriteTrip: false,
-        headerPhoto: "PaddleBoarding"
+        headerPhoto: "Paddleboarding"
     )
     sampleGeocode = Geocode(latitude: 44.897739, longitude: -85.991600)
     sampleTrip.setGeocode(geocode: sampleGeocode)
@@ -222,7 +222,7 @@ func getSampleTripImageData() -> [TripImage] {
 func getSampleUsers() -> [User] {
     var users: [User] = []
     
-    let sampleUser: User = User(
+    var sampleUser: User = User(
         id: 1,
         firstName: "Matthew",
         lastName: "Meyerink",
@@ -231,6 +231,48 @@ func getSampleUsers() -> [User] {
         profilePicture: "mattmeyerink"
     )
     users.append(sampleUser)
+    
+    sampleUser = User(
+        id: 2,
+        firstName: "Erika",
+        lastName: "Yasuda",
+        email: "eyasuda@umich.edu",
+        username: "eyasuda",
+        profilePicture: "eyasuda"
+    )
+    users.append(sampleUser)
+    
+    sampleUser = User(
+        id: 3,
+        firstName: "Jason",
+        lastName: "Ting",
+        email: "jting@gmail.com",
+        username: "asiantingaling",
+        profilePicture: "asiantingaling"
+    )
+    users.append(sampleUser)
+    
+    sampleUser = User(
+        id: 4,
+        firstName: "Kyle",
+        lastName: "Patmore",
+        email: "kpatmore@gmail.com",
+        username: "cteisntreal",
+        profilePicture: "cteisntreal"
+    )
+    users.append(sampleUser)
+    
+    sampleUser = User(
+        id: 5,
+        firstName: "Percy",
+        lastName: "Meyerink",
+        email: "percy@gmail.com",
+        username: "percy",
+        profilePicture: "percy"
+    )
+    users.append(sampleUser)
+    
+    
     
     return users
 }
