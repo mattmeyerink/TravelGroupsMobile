@@ -22,6 +22,7 @@ struct UserHeadline: View {
                 .frame(height: 155)
                 .shadow(radius: 7)
             Text(user.username)
+                .foregroundColor(.black)
         }
         .padding(.horizontal)
     }

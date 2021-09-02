@@ -25,8 +25,10 @@ struct TripHeadline: View {
                 .padding(.top)
                 .padding(.bottom, 10)
             Text(trip.address.city + ", ")
+                .foregroundColor(.black)
                 .padding(.leading)
             Text(trip.address.state)
+                .foregroundColor(.black)
                 .padding(.leading)
         }
     }

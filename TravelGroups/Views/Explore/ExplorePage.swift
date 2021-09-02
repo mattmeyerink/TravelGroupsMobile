@@ -19,6 +19,7 @@ struct ExplorePage: View {
                     .padding(.horizontal)
                 Spacer()
             }
+                .padding(.top)
             TripHeadlineList(trips: sampleTrips)
                 .padding(.leading)
                 .padding(.bottom)
@@ -31,6 +32,7 @@ struct ExplorePage: View {
                     .padding(.horizontal)
                 Spacer()
             }
+                .padding(.top)
             UserHeadlineList(users: sampleUsers)
                 .padding(.leading)
         }

@@ -14,7 +14,9 @@ struct UserHeadlineList: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .top, spacing: 0) {
                 ForEach(users) { user in
-                    UserHeadline(user: user)
+                    NavigationLink(destination: ProfilePage(currentUser: CurrentUser(user: user), allMyPhotos: sampleTripImages)) {
+                        UserHeadline(user: user)
+                    }
                 }
             }
         }

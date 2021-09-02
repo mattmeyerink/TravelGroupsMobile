@@ -16,7 +16,9 @@ struct TripHeadlineList: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .top, spacing: 0) {
                 ForEach(trips) { trip in
-                    TripHeadline(trip: trip)
+                    NavigationLink(destination: TripsDetailPage(trip: trip, activities: sampleActivities, images: sampleTripImages)) {
+                        TripHeadline(trip: trip)
+                    }
                 }
             }
         }
