@@ -46,7 +46,9 @@ struct ContentView: View {
                 }
                 .tag(Tab.explore)
             
-            ProfilePage(currentUser: currentUser, allMyPhotos: sampleTripImages)
+            NavigationView {
+                ProfilePage(currentUser: currentUser, allMyPhotos: sampleTripImages)
+            }
                 .tabItem{
                     Label("Profile", systemImage: "person.circle")
                 }

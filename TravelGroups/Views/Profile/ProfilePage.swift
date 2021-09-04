@@ -25,24 +25,21 @@ struct ProfilePage: View {
                     .shadow(radius: 7)
                 
                 HStack {
-                    Text(currentUser.user.firstName)
-                        .fontWeight(.bold)
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                    Text(currentUser.user.lastName)
-                        .fontWeight(.bold)
-                        .font(.title)
-                }
-                
-                HStack {
                     Text("20 Trips")
                         .fontWeight(.semibold)
                         .padding()
-                    Text("20 Followers")
-                        .fontWeight(.semibold)
-                        .padding()
-                    Text("20 Following")
-                        .fontWeight(.semibold)
-                        .padding()
+                    
+                    NavigationLink(destination: FollowListPage(users: sampleUsers, navigationTitle: "Followers")) {
+                        Text("20 Followers")
+                            .fontWeight(.semibold)
+                            .padding()
+                    }
+                    
+                    NavigationLink(destination: FollowListPage(users: sampleUsers, navigationTitle: "Following")) {
+                        Text("20 Following")
+                            .fontWeight(.semibold)
+                            .padding()
+                    }
                 }
                 
                 VStack {
@@ -56,6 +53,7 @@ struct ProfilePage: View {
                     .padding()
             }
         }
+            .navigationBarTitle(currentUser.user.firstName + " " + currentUser.user.lastName)
     }
 }
 
