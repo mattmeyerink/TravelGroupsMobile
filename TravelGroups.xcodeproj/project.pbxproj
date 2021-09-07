@@ -29,6 +29,7 @@
 		068717CE26DC821900E2E758 /* UserHeadlineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068717CD26DC821900E2E758 /* UserHeadlineList.swift */; };
 		069165BB26DB26CE009742CC /* TripsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069165BA26DB26CE009742CC /* TripsStore.swift */; };
 		069165BD26DB27E9009742CC /* ActivitiesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069165BC26DB27E9009742CC /* ActivitiesStore.swift */; };
+		069997CA26E70284004A8E43 /* TripListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069997C926E70284004A8E43 /* TripListRow.swift */; };
 		06A40A8026AB7BAA00115DF2 /* LoadSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A40A7F26AB7BAA00115DF2 /* LoadSampleData.swift */; };
 		06B1561126C0C020003131FF /* LocationStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B1561026C0C020003131FF /* LocationStructures.swift */; };
 		06B1561526C0CCE0003131FF /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B1561426C0CCE0003131FF /* Geocoder.swift */; };
@@ -89,6 +90,7 @@
 		068717CD26DC821900E2E758 /* UserHeadlineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeadlineList.swift; sourceTree = "<group>"; };
 		069165BA26DB26CE009742CC /* TripsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsStore.swift; sourceTree = "<group>"; };
 		069165BC26DB27E9009742CC /* ActivitiesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesStore.swift; sourceTree = "<group>"; };
+		069997C926E70284004A8E43 /* TripListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListRow.swift; sourceTree = "<group>"; };
 		06A40A7F26AB7BAA00115DF2 /* LoadSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSampleData.swift; sourceTree = "<group>"; };
 		06B1561026C0C020003131FF /* LocationStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStructures.swift; sourceTree = "<group>"; };
 		06B1561426C0CCE0003131FF /* Geocoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				065F214F26A7A92100CC372D /* ProfilePage.swift */,
 				061989E626E3163400E6F91B /* FollowListPage.swift */,
 				061989E826E3181C00E6F91B /* UserListRow.swift */,
+				069997C926E70284004A8E43 /* TripListRow.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				068717CC26DC810300E2E758 /* UserHeadline.swift in Sources */,
 				06510FFC26D889BA00A6278F /* MapViewCoordinator.swift in Sources */,
 				06C2622026D49B2F00723D98 /* ActivitiesMapView.swift in Sources */,
+				069997CA26E70284004A8E43 /* TripListRow.swift in Sources */,
 				0616107326B3BAA000988C7D /* TripsDetailPage.swift in Sources */,
 				06CEC70E26CB57FB0045346C /* ActivitiesList.swift in Sources */,
 				06A40A8026AB7BAA00115DF2 /* LoadSampleData.swift in Sources */,
