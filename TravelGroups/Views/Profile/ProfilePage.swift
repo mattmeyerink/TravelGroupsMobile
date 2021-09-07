@@ -25,9 +25,11 @@ struct ProfilePage: View {
                     .shadow(radius: 7)
                 
                 HStack {
-                    Text("20 Trips")
-                        .fontWeight(.semibold)
-                        .padding()
+                    NavigationLink(destination: TripsProfileList(trips: sampleTrips, user: currentUser.user)) {
+                        Text("20 Trips")
+                            .fontWeight(.semibold)
+                            .padding()
+                    }
                     
                     NavigationLink(destination: FollowListPage(users: sampleUsers, navigationTitle: "Followers")) {
                         Text("20 Followers")
