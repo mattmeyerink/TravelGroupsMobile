@@ -17,6 +17,8 @@
 		061989E726E3163400E6F91B /* FollowListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061989E626E3163400E6F91B /* FollowListPage.swift */; };
 		061989E926E3181C00E6F91B /* UserListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061989E826E3181C00E6F91B /* UserListRow.swift */; };
 		0626B1EB26B6FDE80092B292 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0626B1EA26B6FDE80092B292 /* MapView.swift */; };
+		062C5A9726E9A97B005454DF /* TravelPinAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062C5A9626E9A97B005454DF /* TravelPinAnnotationView.swift */; };
+		062C5A9B26E9ABF1005454DF /* TravelPinClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062C5A9A26E9ABF1005454DF /* TravelPinClusterAnnotationView.swift */; };
 		06510FFC26D889BA00A6278F /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06510FFB26D889BA00A6278F /* MapViewCoordinator.swift */; };
 		065F214A26A7A6A300CC372D /* MapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214926A7A6A300CC372D /* MapPage.swift */; };
 		065F214C26A7A85900CC372D /* TripsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F214B26A7A85900CC372D /* TripsPage.swift */; };
@@ -79,6 +81,8 @@
 		061989E626E3163400E6F91B /* FollowListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowListPage.swift; sourceTree = "<group>"; };
 		061989E826E3181C00E6F91B /* UserListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListRow.swift; sourceTree = "<group>"; };
 		0626B1EA26B6FDE80092B292 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		062C5A9626E9A97B005454DF /* TravelPinAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPinAnnotationView.swift; sourceTree = "<group>"; };
+		062C5A9A26E9ABF1005454DF /* TravelPinClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPinClusterAnnotationView.swift; sourceTree = "<group>"; };
 		06510FFB26D889BA00A6278F /* MapViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
 		065F214926A7A6A300CC372D /* MapPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPage.swift; sourceTree = "<group>"; };
 		065F214B26A7A85900CC372D /* TripsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsPage.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 			children = (
 				065F214926A7A6A300CC372D /* MapPage.swift */,
 				0626B1EA26B6FDE80092B292 /* MapView.swift */,
+				062C5A9626E9A97B005454DF /* TravelPinAnnotationView.swift */,
+				062C5A9A26E9ABF1005454DF /* TravelPinClusterAnnotationView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -445,6 +451,7 @@
 				06CEC71026CB584B0045346C /* ActivityRow.swift in Sources */,
 				060368A626C9943D001EC316 /* Activity.swift in Sources */,
 				065F214E26A7A8B800CC372D /* ExplorePage.swift in Sources */,
+				062C5A9726E9A97B005454DF /* TravelPinAnnotationView.swift in Sources */,
 				068717CA26DC7DDE00E2E758 /* TripHeadlineList.swift in Sources */,
 				069165BB26DB26CE009742CC /* TripsStore.swift in Sources */,
 				06C2621E26D4829500723D98 /* Address.swift in Sources */,
@@ -472,6 +479,7 @@
 				06510FFC26D889BA00A6278F /* MapViewCoordinator.swift in Sources */,
 				06C2622026D49B2F00723D98 /* ActivitiesMapView.swift in Sources */,
 				069997CA26E70284004A8E43 /* TripListRow.swift in Sources */,
+				062C5A9B26E9ABF1005454DF /* TravelPinClusterAnnotationView.swift in Sources */,
 				0616107326B3BAA000988C7D /* TripsDetailPage.swift in Sources */,
 				06CEC70E26CB57FB0045346C /* ActivitiesList.swift in Sources */,
 				06A40A8026AB7BAA00115DF2 /* LoadSampleData.swift in Sources */,
