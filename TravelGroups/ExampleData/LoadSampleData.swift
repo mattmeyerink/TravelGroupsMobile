@@ -132,14 +132,14 @@ func getSampleTripData() -> [Trip] {
     sampleTrip = Trip(
         id: 9,
         name: "Sleeping Bear Trip Again",
-        address: Address(street: "", city: "Glen Arbor", state: "MI", country: "US", postalCode: "49636"),
+        address: Address(street: "", city: "Traverse City", state: "MI", country: "US", postalCode: "49636"),
         description: "Going back because this place is awesome!",
         startDate: "07/13/2021",
         endDate: "08/06/2021",
         isFavoriteTrip: false,
         headerPhoto: "ErikaUpNorth"
     )
-    sampleGeocode = Geocode(latitude: 44.897739, longitude: -85.991600)
+    sampleGeocode = Geocode(latitude: 44.76306, longitude: -85.62063)
     sampleTrip.setGeocode(geocode: sampleGeocode)
     trips.append(sampleTrip)
     

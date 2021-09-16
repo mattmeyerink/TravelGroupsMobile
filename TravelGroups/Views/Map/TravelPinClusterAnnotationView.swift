@@ -16,6 +16,7 @@ class TravelPinClusterAnnotationView: MKAnnotationView {
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         collisionMode = .circle
+        print("Trying to cluster")
         updateImage()
     }
     

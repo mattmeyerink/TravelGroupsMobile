@@ -26,11 +26,11 @@ class MapViewCoordinator: NSObject, MKMapViewDelegate {
         var view: MKAnnotationView
         
         if let dequeuedView = mapView.dequeueReusableAnnotationView(
-            withIdentifier: identifier) as? MKMarkerAnnotationView {
+            withIdentifier: identifier) as? TravelPinAnnotationView {
             dequeuedView.annotation = annotation
             view = dequeuedView
         } else {
-            view = MKMarkerAnnotationView(
+            view = TravelPinAnnotationView(
             annotation: annotation, reuseIdentifier: identifier)
             view.canShowCallout = true
             view.calloutOffset = CGPoint(x: -5, y: 5)
