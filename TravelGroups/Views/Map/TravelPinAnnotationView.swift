@@ -17,3 +17,4 @@ class TravelPinAnnotationView: MKMarkerAnnotationView {
         }
     }
 }
+
