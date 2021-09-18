@@ -14,10 +14,11 @@ import MapKit
 
 struct MapPage: View {
     @ObservedObject var tripsStore: TripsStore
+    @ObservedObject var activitiesStore: ActivitiesStore
     
     var body: some View {
         NavigationView {
-            MapView(pins: generatePinsFromTrips(trips: tripsStore.trips, activities: sampleActivities))
+            MapView(pins: generatePinsFromTrips(trips: tripsStore.trips, activities: activitiesStore.activities))
                 .edgesIgnoringSafeArea(.all)
         }
     }
@@ -25,7 +26,10 @@ struct MapPage: View {
 
 struct MapPage_Previews: PreviewProvider {
     static var previews: some View {
-        MapPage(tripsStore: TripsStore(trips: sampleTrips))
+        MapPage(
+            tripsStore: TripsStore(trips: sampleTrips),
+            activitiesStore: ActivitiesStore(activities: sampleActivities)
+        )
     }
 }
 
