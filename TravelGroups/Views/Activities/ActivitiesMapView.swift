@@ -26,7 +26,7 @@ struct ActivitiesMapView: View {
             .onAppear{
                 self.region = MKCoordinateRegion(
                     center: CLLocationCoordinate2D(latitude: geocode.latitude, longitude: geocode.longitude),
-                    span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+                    span: MKCoordinateSpan(latitudeDelta: 0.025, longitudeDelta: 0.025)
                 )
                 
                 self.detailPins.append(
