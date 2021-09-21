@@ -17,12 +17,23 @@ struct ActivitiesMapView: View {
         span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
     )
     
+    @State var detailPins: [DetailPin] = []
+    
     var body: some View {
-        Map(coordinateRegion: $region)
+        Map(coordinateRegion: $region, annotationItems: detailPins) {
+            MapPin(coordinate: $0.coordinate)
+        }
             .onAppear{
                 self.region = MKCoordinateRegion(
                     center: CLLocationCoordinate2D(latitude: geocode.latitude, longitude: geocode.longitude),
                     span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+                )
+                
+                self.detailPins.append(
+                    DetailPin(
+                        name: "Name",
+                        coordinate: CLLocationCoordinate2D(latitude: geocode.latitude, longitude: geocode.longitude)
+                    )
                 )
             }
     }
