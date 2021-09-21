@@ -30,7 +30,7 @@ struct ActivityDetailPage: View {
                         .padding()
                     Spacer()
                 }
-                ActivitiesMapView()
+                ActivitiesMapView(geocode: activity.geocode!)
                     .frame(height: 300)
                 VStack {
                     HStack {
