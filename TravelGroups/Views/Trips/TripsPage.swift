@@ -93,7 +93,8 @@ func generateBlankTrip() -> Trip {
         startDate: "",
         endDate: "",
         isFavoriteTrip: false,
-        headerPhoto: ""
+        headerPhoto: "",
+        tripMembers: []
     )
 }
 

@@ -27,6 +27,8 @@ struct Trip: Identifiable, Hashable, Codable {
     
     var headerPhoto: String
     
+    var tripMembers: [User]
+    
     mutating func setGeocode(geocode: Geocode) -> Void {
         self.geocode = geocode
     }

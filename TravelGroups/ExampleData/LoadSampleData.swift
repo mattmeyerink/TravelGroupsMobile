@@ -25,7 +25,8 @@ func getSampleTripData() -> [Trip] {
         startDate: "07/13/2021",
         endDate: "08/06/2021",
         isFavoriteTrip: false,
-        headerPhoto: "MalibuHike"
+        headerPhoto: "MalibuHike",
+        tripMembers: getSampleUsers()
     )
     var sampleGeocode: Geocode = Geocode(latitude: 33.862141, longitude: -118.400009)
     sampleTrip.setGeocode(geocode: sampleGeocode)
@@ -39,7 +40,8 @@ func getSampleTripData() -> [Trip] {
         startDate: "07/13/2021",
         endDate: "08/06/2021",
         isFavoriteTrip: false,
-        headerPhoto: "DCMonument"
+        headerPhoto: "DCMonument",
+        tripMembers: getSampleUsers()
     )
     sampleGeocode = Geocode(latitude: 32.779167, longitude: -96.808891)
     sampleTrip.setGeocode(geocode: sampleGeocode)
@@ -53,7 +55,8 @@ func getSampleTripData() -> [Trip] {
         startDate: "07/13/2021",
         endDate: "08/06/2021",
         isFavoriteTrip: false,
-        headerPhoto: "JasonAndMe"
+        headerPhoto: "JasonAndMe",
+        tripMembers: getSampleUsers()
     )
     sampleGeocode = Geocode(latitude: 26.438135, longitude: -81.806755)
     sampleTrip.setGeocode(geocode: sampleGeocode)
@@ -67,7 +70,8 @@ func getSampleTripData() -> [Trip] {
         startDate: "07/13/2021",
         endDate: "08/06/2021",
         isFavoriteTrip: false,
-        headerPhoto: "ErikaUpNorth"
+        headerPhoto: "ErikaUpNorth",
+        tripMembers: getSampleUsers()
     )
     sampleGeocode = Geocode(latitude: 44.897739, longitude: -85.991600)
     sampleTrip.setGeocode(geocode: sampleGeocode)
@@ -81,7 +85,8 @@ func getSampleTripData() -> [Trip] {
         startDate: "07/13/2021",
         endDate: "08/06/2021",
         isFavoriteTrip: false,
-        headerPhoto: "Paddleboarding"
+        headerPhoto: "Paddleboarding",
+        tripMembers: getSampleUsers()
     )
     sampleGeocode = Geocode(latitude: 44.897739, longitude: -85.991600)
     sampleTrip.setGeocode(geocode: sampleGeocode)
@@ -95,7 +100,8 @@ func getSampleTripData() -> [Trip] {
         startDate: "07/13/2021",
         endDate: "08/06/2021",
         isFavoriteTrip: false,
-        headerPhoto: "JasonAndMe"
+        headerPhoto: "JasonAndMe",
+        tripMembers: getSampleUsers()
     )
     sampleGeocode = Geocode(latitude: 28.538336, longitude: -81.379234)
     sampleTrip.setGeocode(geocode: sampleGeocode)
@@ -109,7 +115,8 @@ func getSampleTripData() -> [Trip] {
         startDate: "07/13/2021",
         endDate: "08/06/2021",
         isFavoriteTrip: false,
-        headerPhoto: "ErikaUpNorth"
+        headerPhoto: "ErikaUpNorth",
+        tripMembers: getSampleUsers()
     )
     sampleGeocode = Geocode(latitude: 51.507351, longitude: -0.127758)
     sampleTrip.setGeocode(geocode: sampleGeocode)
@@ -123,7 +130,8 @@ func getSampleTripData() -> [Trip] {
         startDate: "07/13/2021",
         endDate: "08/06/2021",
         isFavoriteTrip: false,
-        headerPhoto: "MalibuHike"
+        headerPhoto: "MalibuHike",
+        tripMembers: getSampleUsers()
     )
     sampleGeocode = Geocode(latitude: 36.252880, longitude: -121.787354)
     sampleTrip.setGeocode(geocode: sampleGeocode)
@@ -137,7 +145,8 @@ func getSampleTripData() -> [Trip] {
         startDate: "07/13/2021",
         endDate: "08/06/2021",
         isFavoriteTrip: false,
-        headerPhoto: "ErikaUpNorth"
+        headerPhoto: "ErikaUpNorth",
+        tripMembers: getSampleUsers()
     )
     sampleGeocode = Geocode(latitude: 44.76306, longitude: -85.62063)
     sampleTrip.setGeocode(geocode: sampleGeocode)
@@ -151,7 +160,8 @@ func getSampleTripData() -> [Trip] {
         startDate: "07/13/2021",
         endDate: "08/06/2021",
         isFavoriteTrip: false,
-        headerPhoto: "ErikaUpNorth"
+        headerPhoto: "ErikaUpNorth",
+        tripMembers: getSampleUsers()
     )
     sampleGeocode = Geocode(latitude: 32.178890, longitude: -80.743057)
     sampleTrip.setGeocode(geocode: sampleGeocode)
