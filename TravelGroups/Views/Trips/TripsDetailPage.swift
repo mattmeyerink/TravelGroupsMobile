@@ -21,7 +21,9 @@ struct TripsDetailPage: View {
                     VStack (alignment: .leading) {
                         Text("Trip Information")
                             .font(.title)
-                        Text(String(trip.tripMembers.count) + " Trip Members")
+                        NavigationLink(destination: TripMemberList(tripMembers: trip.tripMembers)) {
+                            Text(String(trip.tripMembers.count) + " Trip Members")
+                        }
                         Text(trip.description)
                         Text("Start Date: " + trip.startDate)
                         Text("End Date: " + trip.endDate)
