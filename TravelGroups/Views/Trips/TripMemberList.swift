@@ -15,10 +15,13 @@ struct TripMemberList: View {
     var trip: Trip
     
     var body: some View {
-        List(trip.tripMembers) {tripMember in
-            NavigationLink(destination: ProfilePage(currentUser: CurrentUser(user: tripMember), allMyPhotos: sampleTripImages)) {
-                UserListRow(user: tripMember)
+        List {
+            ForEach(trip.tripMembers, id: \.self) { tripMember in
+                NavigationLink(destination: ProfilePage(currentUser: CurrentUser(user: tripMember), allMyPhotos: sampleTripImages)) {
+                    UserListRow(user: tripMember)
+                }
             }
+                .onDelete(perform: deleteTripMember)
         }
             .navigationBarTitle("Trip Members")
             .navigationBarItems(
@@ -27,6 +30,10 @@ struct TripMemberList: View {
                         Image(systemName: "plus")
                     }
             )
+    }
+    
+    func deleteTripMember(at offsets: IndexSet) -> Void {
+        trip.tripMembers.remove(atOffsets: offsets)
     }
 }
 
