@@ -12,20 +12,27 @@
 import SwiftUI
 
 struct TripMemberList: View {
-    var tripMembers: [User]
+    var trip: Trip
     
     var body: some View {
-        List(tripMembers) {tripMember in
+        List(trip.tripMembers) {tripMember in
             NavigationLink(destination: ProfilePage(currentUser: CurrentUser(user: tripMember), allMyPhotos: sampleTripImages)) {
                 UserListRow(user: tripMember)
             }
         }
             .navigationBarTitle("Trip Members")
+            .navigationBarItems(
+                trailing:
+                    NavigationLink(destination: AddTripMemberPage(trip: trip)) {
+                        Image(systemName: "plus")
+                    }
+            )
     }
 }
 
+
 struct TripMemberList_Previews: PreviewProvider {
     static var previews: some View {
-        TripMemberList(tripMembers: getSampleUsers())
+        TripMemberList(trip: sampleTrips[0])
     }
 }

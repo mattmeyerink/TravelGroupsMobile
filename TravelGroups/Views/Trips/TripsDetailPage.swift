@@ -21,7 +21,7 @@ struct TripsDetailPage: View {
                     VStack (alignment: .leading) {
                         Text("Trip Information")
                             .font(.title)
-                        NavigationLink(destination: TripMemberList(tripMembers: trip.tripMembers)) {
+                        NavigationLink(destination: TripMemberList(trip: trip)) {
                             Text(String(trip.tripMembers.count) + " Trip Members")
                         }
                         Text(trip.description)
