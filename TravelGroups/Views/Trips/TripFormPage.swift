@@ -22,6 +22,9 @@ struct TripFormPage: View {
     
     @State var tripAdded: Bool = false
     
+    @State var isShowingPhotoLibrary: Bool = false
+    @State var headerImage = UIImage()
+    
     
     var body: some View {
         Form {
