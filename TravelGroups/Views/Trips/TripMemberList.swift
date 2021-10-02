@@ -12,7 +12,7 @@
 import SwiftUI
 
 struct TripMemberList: View {
-    var trip: Trip
+    @State var trip: Trip
     
     var body: some View {
         List {
