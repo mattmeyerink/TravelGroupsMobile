@@ -41,6 +41,12 @@ struct TripFormPage: View {
             }
             
             Section(header: Text("HEADER PHOTO")) {
+                Image(uiImage: self.headerImage)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .edgesIgnoringSafeArea(.all)
+            
                 Button(action: { self.isShowingPhotoLibrary = true }) {
                     HStack {
                         Image(systemName: "photo")
@@ -64,6 +70,9 @@ struct TripFormPage: View {
                 })
         }
             .navigationBarTitle(trip.name == "" ? "Add New Trip" : "Edit " + trip.name)
+            .sheet(isPresented: $isShowingPhotoLibrary) {
+                ImagePicker(selectedImage: self.$headerImage)
+            }
     }
 }
 
