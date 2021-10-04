@@ -40,6 +40,18 @@ struct TripFormPage: View {
                 TextField("Country", text: $formTripCountry)
             }
             
+            Section(header: Text("HEADER PHOTO")) {
+                Button(action: { self.isShowingPhotoLibrary = true }) {
+                    HStack {
+                        Image(systemName: "photo")
+                            .font(.system(size: 20))
+     
+                        Text("Photo library")
+                            .font(.headline)
+                    }
+                }
+            }
+            
             Button(
                 action: {self.tripAdded = true},
                 label: {
