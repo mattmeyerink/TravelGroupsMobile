@@ -37,6 +37,9 @@ struct ActivityDetailPage: View {
                         Text("Photos")
                             .font(.title)
                         Spacer()
+                        NavigationLink(destination: PhotoUploadForm()) {
+                            Image(systemName: "plus")
+                        }
                     }
                     PhotosGrid(images: images)
                 }

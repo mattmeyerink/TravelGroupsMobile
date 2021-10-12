@@ -14,7 +14,7 @@ struct PhotoUploadForm: View {
     @State var imageToUpload = UIImage()
     
     var body: some View {
-        ScrollView {
+        VStack {
             if (self.imageToUpload.size.width != 0) {
                 Text("Selected Photo")
                     .font(.title)
@@ -35,6 +35,13 @@ struct PhotoUploadForm: View {
 
                     Text("Photo library")
                         .font(.headline)
+                }
+            }
+                .padding()
+            
+            if (self.imageToUpload.size.width != 0) {
+                Button(action: { print("Photo uploaded")}) {
+                    Text("Upload Photo")
                 }
             }
         }
